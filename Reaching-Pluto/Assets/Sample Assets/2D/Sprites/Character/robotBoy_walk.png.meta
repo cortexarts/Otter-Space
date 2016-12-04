@@ -1,0 +1,449 @@
+fileFormatVersion: 2
+guid: feda0c18015b3284cabbc0da85254f9a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: robotBoy_walk_0
+    21300002: robotBoy_walk_1
+    21300004: robotBoy_walk_2
+    21300006: robotBoy_walk_3
+    21300008: robotBoy_walk_4
+    21300010: robotBoy_walk_5
+    21300012: robotBoy_walk_6
+    21300014: robotBoy_walk_7
+    21300016: robotBoy_walk_8
+    21300018: robotBoy_walk_9
+    21300020: robotBoy_walk_10
+    21300022: robotBoy_walk_11
+    21300024: robotBoy_walk_12
+    21300026: robotBoy_walk_13
+    21300028: robotBoy_walk_14
+    21300030: robotBoy_walk_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 100
+    allowsAlphaSplitting: 0
+  - buildTarget: Android
+    maxTextureSize: 1024
+    textureFormat: -1
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  - buildTarget: BlackBerry
+    maxTextureSize: 1024
+    textureFormat: -1
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  - buildTarget: WP8
+    maxTextureSize: 1024
+    textureFormat: -1
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: robotBoy_walk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.5, y: 94.5}
+        - {x: 41.5, y: 95.5}
+        - {x: 23.5, y: 99.5}
+        - {x: -46.5, y: 99.5}
+        - {x: -60.5, y: 81.5}
+        - {x: -62.5, y: 44.5}
+        - {x: -62.5, y: -127.5}
+        - {x: -47.5, y: -127.5}
+        - {x: -43.5, y: -123.5}
+        - {x: -10.5, y: -127.5}
+        - {x: 42.5, y: -127.5}
+    - name: robotBoy_walk_1
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: -97.5}
+        - {x: -16.5, y: -108.5}
+        - {x: -13.5, y: -125.5}
+        - {x: 22.5, y: -122.5}
+        - {x: 29.5, y: -114.5}
+        - {x: 43.5, y: -79.5}
+        - {x: 43.5, y: 98.5}
+        - {x: -54.5, y: 98.5}
+        - {x: -58.5, y: 95.5}
+        - {x: -58.5, y: -124.5}
+        - {x: -56.5, y: -126.5}
+        - {x: -43.5, y: -126.5}
+        - {x: -18.5, y: -92.5}
+        - {x: -14.5, y: -93.5}
+        - {x: -14.5, y: -92.5}
+    - name: robotBoy_walk_2
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53.5, y: 97.5}
+        - {x: -53.5, y: -125.5}
+        - {x: 24.5, y: -125.5}
+        - {x: 46.5, y: -17.5}
+        - {x: 46.5, y: 97.5}
+    - name: robotBoy_walk_3
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.5, y: -80.5}
+        - {x: 47.5, y: 90.5}
+        - {x: 22.5, y: 97.5}
+        - {x: -43.5, y: 97.5}
+        - {x: -47.5, y: 93.5}
+        - {x: -47.5, y: -126.5}
+        - {x: 33.5, y: -126.5}
+    - name: robotBoy_walk_4
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5, y: -124.5}
+        - {x: 3.5, y: -125.5}
+        - {x: 8.5, y: -123.5}
+        - {x: 47.5, y: -33.5}
+        - {x: 47.5, y: 81.5}
+        - {x: 35.5, y: 98.5}
+        - {x: -31.5, y: 98.5}
+        - {x: -39.5, y: 93.5}
+        - {x: -44.5, y: 40.5}
+        - {x: -44.5, y: -97.5}
+        - {x: -32.5, y: -128.5}
+        - {x: -24.5, y: -133.5}
+        - {x: -18.5, y: -133.5}
+        - {x: -16.5, y: -128.5}
+        - {x: -16.5, y: -122.5}
+    - name: robotBoy_walk_5
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 99.5}
+        - {x: -44.5, y: 90.5}
+        - {x: -44.5, y: -122.5}
+        - {x: -23.5, y: -134.5}
+        - {x: 11.5, y: -134.5}
+        - {x: 46.5, y: -74.5}
+        - {x: 46.5, y: 99.5}
+    - name: robotBoy_walk_6
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32.5, y: 101.5}
+        - {x: -50.5, y: 101.5}
+        - {x: -51.5, y: 93.5}
+        - {x: -51.5, y: -117.5}
+        - {x: -31.5, y: -124.5}
+        - {x: 28.5, y: -124.5}
+        - {x: 29.5, y: -122.5}
+        - {x: 30.5, y: -61.5}
+        - {x: 43.5, y: 1.5}
+        - {x: 43.5, y: 77.5}
+    - name: robotBoy_walk_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.5, y: -107.5}
+        - {x: 42.5, y: 101.5}
+        - {x: -48.5, y: 101.5}
+        - {x: -56.5, y: 55.5}
+        - {x: -56.5, y: -110.5}
+        - {x: -27.5, y: -121.5}
+        - {x: -21.5, y: -121.5}
+        - {x: -16.5, y: -112.5}
+        - {x: -11.5, y: -121.5}
+        - {x: 27.5, y: -121.5}
+    - name: robotBoy_walk_8
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.5, y: -122.5}
+        - {x: 42.5, y: -106.5}
+        - {x: 42.5, y: 76.5}
+        - {x: 28.5, y: 101.5}
+        - {x: -42.5, y: 101.5}
+        - {x: -55.5, y: 95.5}
+        - {x: -55.5, y: 51.5}
+        - {x: -48.5, y: 38.5}
+        - {x: -43.5, y: 34.5}
+        - {x: -48.5, y: -22.5}
+        - {x: -49.5, y: -50.5}
+        - {x: -44.5, y: -72.5}
+        - {x: -35.5, y: -76.5}
+        - {x: -29.5, y: -77.5}
+        - {x: -50.5, y: -85.5}
+        - {x: -55.5, y: -87.5}
+        - {x: -55.5, y: -97.5}
+        - {x: -37.5, y: -122.5}
+        - {x: -24.5, y: -122.5}
+        - {x: -18.5, y: -116.5}
+        - {x: -16.5, y: -117.5}
+        - {x: -8.5, y: -122.5}
+    - name: robotBoy_walk_9
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49.5, y: 100.5}
+        - {x: -49.5, y: -80.5}
+        - {x: -31.5, y: -80.5}
+        - {x: -21.5, y: -78.5}
+        - {x: -48.5, y: -84.5}
+        - {x: -49.5, y: -85.5}
+        - {x: -49.5, y: -103.5}
+        - {x: -42.5, y: -121.5}
+        - {x: -28.5, y: -126.5}
+        - {x: -22.5, y: -126.5}
+        - {x: -18.5, y: -114.5}
+        - {x: -14.5, y: -126.5}
+        - {x: 43.5, y: -126.5}
+        - {x: 43.5, y: 67.5}
+        - {x: 28.5, y: 100.5}
+    - name: robotBoy_walk_10
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 98.5}
+        - {x: -45.5, y: -70.5}
+        - {x: -44.5, y: -71.5}
+        - {x: -37.5, y: -77.5}
+        - {x: -28.5, y: -80.5}
+        - {x: -23.5, y: -81.5}
+        - {x: -28.5, y: -81.5}
+        - {x: -45.5, y: -82.5}
+        - {x: -45.5, y: -85.5}
+        - {x: -32.5, y: -123.5}
+        - {x: -24.5, y: -127.5}
+        - {x: 25.5, y: -127.5}
+        - {x: 45.5, y: -124.5}
+        - {x: 46.5, y: -109.5}
+        - {x: 46.5, y: 98.5}
+    - name: robotBoy_walk_11
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 97.5}
+        - {x: -43.5, y: 91.5}
+        - {x: -43.5, y: -60.5}
+        - {x: -40.5, y: -73.5}
+        - {x: -32.5, y: -77.5}
+        - {x: -22.5, y: -81.5}
+        - {x: -19.5, y: -81.5}
+        - {x: -23.5, y: -81.5}
+        - {x: -38.5, y: -84.5}
+        - {x: -38.5, y: -125.5}
+        - {x: -32.5, y: -128.5}
+        - {x: 13.5, y: -128.5}
+        - {x: 32.5, y: -120.5}
+        - {x: 47.5, y: -50.5}
+        - {x: 47.5, y: 79.5}
+        - {x: 39.5, y: 97.5}
+    - name: robotBoy_walk_12
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.5, y: 98.5}
+        - {x: -44.5, y: 97.5}
+        - {x: -44.5, y: -131.5}
+        - {x: 9.5, y: -131.5}
+        - {x: 47.5, y: 13.5}
+        - {x: 47.5, y: 90.5}
+        - {x: 19.5, y: 98.5}
+    - name: robotBoy_walk_13
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34.5, y: 98.5}
+        - {x: 23.5, y: 99.5}
+        - {x: -40.5, y: 99.5}
+        - {x: -53.5, y: 85.5}
+        - {x: -55.5, y: 61.5}
+        - {x: -55.5, y: -118.5}
+        - {x: -41.5, y: -133.5}
+        - {x: 24.5, y: -133.5}
+        - {x: 20.5, y: -114.5}
+        - {x: 46.5, y: 7.5}
+        - {x: 46.5, y: 77.5}
+    - name: robotBoy_walk_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1223
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.5, y: 101.5}
+        - {x: -52.5, y: 97.5}
+        - {x: -62.5, y: -1.5}
+        - {x: -62.5, y: -102.5}
+        - {x: -43.5, y: -131.5}
+        - {x: 15.5, y: -131.5}
+        - {x: 42.5, y: -128.5}
+        - {x: 43.5, y: -110.5}
+        - {x: 43.5, y: 101.5}
+    - name: robotBoy_walk_15
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1223
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -57.5, y: 101.5}
+        - {x: -64.5, y: 27.5}
+        - {x: -64.5, y: -126.5}
+        - {x: -18.5, y: -126.5}
+        - {x: 9.5, y: -118.5}
+        - {x: 42.5, y: -119.5}
+        - {x: 42.5, y: 101.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
