@@ -533,7 +533,7 @@ PlayerSettings:
   XboxOne::VR::enabledDevices: []
   iOS::VR::enabledDevices: []
   tvOS::VR::enabledDevices: []
-  cloudProjectId: c7a51bc7-5e28-4120-bdf0-6e8b75a77e29
-  projectName: Reaching-Pluto
+  cloudProjectId: a3b06d2a-1a81-4d49-a457-451f4cf3126b
+  projectName: Otter Space
   organizationId: cortexarts-game-development
   cloudEnabled: 0
