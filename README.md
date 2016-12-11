@@ -1,4 +1,4 @@
-[Reaching Pluto](https://github.com/cortexarts/Reaching-Pluto)
+[Otter Space](https://github.com/cortexarts/Otter-Space)
 ==================================================
 
 Submission for the Google Play Store Contest.
