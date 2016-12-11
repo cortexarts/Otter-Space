@@ -3,36 +3,21 @@ using System.Collections;
 
 public class Orbit : MonoBehaviour
 {
-    public Vector3 Pivot;
-    public bool DebugInfo = true;
+    public Transform center;
+    public Vector3 axis = Vector3.up;
+    public float radius = 2.0f;
+    public float radiusSpeed = 0.5f;
+    public float rotationSpeed = 80.0f;
 
-    //it could be a Vector3 but its more user friendly
-    public bool RotateX = false;
-    public bool RotateY = true;
-    public bool RotateZ = false;
-
-    void FixedUpdate()
+    void Start()
     {
-        transform.position += (transform.rotation * Pivot);
+        transform.position = (transform.position - center.position).normalized * radius + center.position;
+    }
 
-        if (RotateX)
-            transform.rotation *= Quaternion.AngleAxis(45 * Time.deltaTime, Vector3.right);
-        if (RotateY)
-            transform.rotation *= Quaternion.AngleAxis(45 * Time.deltaTime, Vector3.up);
-        if (RotateZ)
-            transform.rotation *= Quaternion.AngleAxis(45 * Time.deltaTime, Vector3.forward);
-
-        transform.position -= (transform.rotation * Pivot);
-
-        if (DebugInfo)
-        {
-            Debug.DrawRay(transform.position, transform.rotation * Vector3.up, Color.black);
-            Debug.DrawRay(transform.position, transform.rotation * Vector3.right, Color.black);
-            Debug.DrawRay(transform.position, transform.rotation * Vector3.forward, Color.black);
-
-            Debug.DrawRay(transform.position + (transform.rotation * Pivot), transform.rotation * Vector3.up, Color.green);
-            Debug.DrawRay(transform.position + (transform.rotation * Pivot), transform.rotation * Vector3.right, Color.red);
-            Debug.DrawRay(transform.position + (transform.rotation * Pivot), transform.rotation * Vector3.forward, Color.blue);
-        }
+    void Update()
+    {
+        transform.RotateAround(center.position, axis, rotationSpeed * Time.deltaTime);
+        Vector3 desiredPosition = (transform.position - center.position).normalized * radius + center.position;
+        transform.position = Vector3.MoveTowards(transform.position, desiredPosition, Time.deltaTime * radiusSpeed);
     }
 }

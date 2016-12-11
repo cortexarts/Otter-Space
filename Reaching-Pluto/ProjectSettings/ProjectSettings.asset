@@ -6,12 +6,12 @@ PlayerSettings:
   serializedVersion: 8
   productGUID: 33faa377e4ca57a4d9b6645b1d2f58b0
   AndroidProfiler: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 3
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: CortexArts
-  productName: Reaching-Pluto
+  productName: Otter Space
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenStyle: 0
