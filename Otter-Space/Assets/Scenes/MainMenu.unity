@@ -1334,7 +1334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 656449358}
-  offsetY: 1.4
+  offsetY: 2
   offsetX: 0
 --- !u!1 &1006803466
 GameObject:
@@ -2148,7 +2148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 656449358}
-  offsetY: 2.2
+  offsetY: 2.6
   offsetX: 0
 --- !u!1 &1832072092
 GameObject:
