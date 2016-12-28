@@ -1,12 +1,15 @@
 fileFormatVersion: 2
-guid: 2b4276621d6cc034697dbd9e75248b9e
-timeCreated: 1482847966
+guid: bcbcb769ce75c664aacf011ad9b7aaf7
+timeCreated: 1482927328
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Mountain01
-    21300002: Mountain2
-    21300004: Mountain3
+    21300000: Background_spritesheet_0
+    21300002: ForegroundSprite
+    21300004: BackgroundFarSprite
+    21300006: BackgroundMiddleSprite
+    21300008: BackgroundCloseMiddleSprite
+    21300010: BackgroundCloseSprite
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -30,7 +33,7 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 0
+    filterMode: 2
     aniso: -1
     mipBias: -1
     wrapMode: 1
@@ -89,39 +92,78 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mountain01
+      name: Background_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1072
+        width: 11520
+        height: 1088
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ForegroundSprite
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1916
-        height: 1080
+        width: 3834
+        height: 458
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Mountain2
+      name: BackgroundFarSprite
       rect:
         serializedVersion: 2
-        x: 1921
-        y: 7
-        width: 1913
-        height: 1073
+        x: 0
+        y: 1075
+        width: 3836
+        height: 1085
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Mountain3
+      name: BackgroundMiddleSprite
       rect:
         serializedVersion: 2
-        x: 3839
+        x: 3837
+        y: 1081
+        width: 3842
+        height: 1079
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BackgroundCloseMiddleSprite
+      rect:
+        serializedVersion: 2
+        x: 7683
+        y: 1083
+        width: 3837
+        height: 1077
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BackgroundCloseSprite
+      rect:
+        serializedVersion: 2
+        x: 3837
         y: 0
-        width: 1921
-        height: 1080
+        width: 3844
+        height: 460
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
