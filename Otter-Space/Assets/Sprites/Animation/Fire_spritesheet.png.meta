@@ -1,9 +1,36 @@
 fileFormatVersion: 2
 guid: 20142cac7dfb2da4184cbf18cc5d4004
-timeCreated: 1482866007
+timeCreated: 1483023561
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Fire_spritesheet_0
+    21300002: Fire_spritesheet_1
+    21300004: Fire_spritesheet_2
+    21300006: Fire_spritesheet_3
+    21300008: Fire_spritesheet_4
+    21300010: Fire_spritesheet_5
+    21300012: Fire_spritesheet_6
+    21300014: Fire_spritesheet_7
+    21300016: Fire_spritesheet_8
+    21300018: Fire_spritesheet_9
+    21300020: Fire_spritesheet_10
+    21300022: Fire_spritesheet_11
+    21300024: Fire_spritesheet_12
+    21300026: Fire_spritesheet_13
+    21300028: Fire_spritesheet_14
+    21300030: Fire_spritesheet_15
+    21300032: Fire_spritesheet_16
+    21300034: Fire_spritesheet_17
+    21300036: Fire_spritesheet_18
+    21300038: Fire_spritesheet_19
+    21300040: Fire_spritesheet_20
+    21300042: Fire_spritesheet_21
+    21300044: Fire_spritesheet_22
+    21300046: Fire_spritesheet_23
+    21300048: Fire_spritesheet_24
+    21300050: Fire_spritesheet_25
+    21300052: Fire_spritesheet_26
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -27,22 +54,22 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 2
     aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -58,9 +85,384 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Fire_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 766
+        width: 129
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 761
+        width: 131
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 731
+        width: 134
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 732
+        width: 133
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 732
+        width: 135
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 748
+        width: 137
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 764
+        width: 138
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 777
+        width: 139
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 765
+        width: 142
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 767
+        width: 143
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 469
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 429
+        width: 146
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 446
+        width: 147
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 496
+        width: 150
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 493
+        width: 147
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 496
+        width: 148
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 471
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 503
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 486
+        width: 141
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 498
+        width: 140
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 222
+        width: 139
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 197
+        width: 137
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 198
+        width: 135
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 211
+        width: 134
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 204
+        width: 133
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 190
+        width: 131
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fire_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 214
+        width: 129
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

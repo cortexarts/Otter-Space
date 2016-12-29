@@ -6,6 +6,7 @@ public class OnGlowEnter : MonoBehaviour {
 
     private bool collided = false;
     private bool leaving = false;
+    public GameObject PopUp;
 
     // Use this for initialization
     void Start () {
@@ -39,6 +40,7 @@ public class OnGlowEnter : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Planet")
         {
+            PopUp.SetActive(true);
             collided = true;
         }
      }
@@ -47,6 +49,7 @@ public class OnGlowEnter : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Planet")
         {
+            PopUp.SetActive(false);
             leaving = true;
         }
     }

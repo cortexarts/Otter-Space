@@ -8,14 +8,23 @@ public class REMOVELATER : MonoBehaviour {
     public float rSpeed = 0f;
     private float movex = 0f;
     private float movey = 0f;
-    public float gravity = 0f;
-    bool Ongravity = false;
 
-    private Vector3 otherpos;
+    public GameObject FireLeft;
+    public GameObject FireRight;
+
+    public string weaponShootSound = "RocketEngine";
+    // Caching
+    AudioManager audioManager;
 
     // Use this for initialization
     void Start()
     {
+        audioManager = AudioManager.instance;
+        if (audioManager == null)
+        {
+            Debug.LogError("FREAK OUT! No audiomanager found in scene.");
+        }
+        audioManager.PlaySound("RocketEngine");
     }
 
     // Update is called once per frame
@@ -41,35 +50,19 @@ public class REMOVELATER : MonoBehaviour {
                 Speed += 0.8f * Time.deltaTime;
             }
         }
+
+        if (Speed > 0.0f)
+        {
+            FireLeft.SetActive(true);
+            FireRight.SetActive(true);
+        }
+        else
+        {
+            FireLeft.SetActive(false);
+            FireRight.SetActive(false);
+        }
         movex = Input.GetAxis("Horizontal");
         movey = Input.GetAxis("Vertical");
         GetComponent<Rigidbody2D>().velocity = new Vector2(movex * Speed, movey * Speed);
-
-        if (Ongravity)
-        {
-            if (gravity < 1.0f)
-            {
-                gravity += 0.4f * Time.deltaTime;
-            }
-            Vector2 direction = (otherpos - transform.position).normalized;
-            GetComponent<Rigidbody2D>().velocity = direction * gravity;
-        }
-    }
-
-    void OnTriggerEnter2D(Collider2D coll)
-    {
-        if (coll.gameObject.tag == "Planet")
-        {
-            otherpos = coll.transform.position;
-            Ongravity = true;
-        }
-    }
-    void OnTriggerExit2D(Collider2D coll)
-    {
-        if (coll.gameObject.tag == "Planet")
-        {
-            Ongravity = false;
-            gravity = 0;
-        }
     }
 }
