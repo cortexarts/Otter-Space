@@ -12,6 +12,12 @@ public class MenuManager : MonoBehaviour
 
     AudioManager audioManager;
 
+    public GameObject audioListener;
+    private bool muted = false;
+
+    public GameObject credits;
+    private bool showCredits;
+
     void Start()
     {
         audioManager = AudioManager.instance;
@@ -41,4 +47,39 @@ public class MenuManager : MonoBehaviour
         audioManager.PlaySound(hoverOverSound);
     }
 
+    public void ToggleMute() {
+        if (muted)
+        {
+            audioListener.SetActive(false);
+            muted = false;
+        }
+        else
+        {
+            audioListener.SetActive(true);
+            muted = true;
+        }
+    }
+
+    public void ToggleCredits() {
+        if (showCredits)
+        {
+            credits.SetActive(false);
+            showCredits = false;
+        }
+        else
+        {
+            credits.SetActive(true);
+            showCredits = true;
+        }
+    }
+
+    public void ShowRate()
+    {
+            Application.OpenURL("market://details?id=com.nianticlabs.pokemongo");
+    }
+
+    public void ToggleHighScore()
+    {
+        Application.OpenURL("market://details?id=com.nianticlabs.pokemongo");
+    }
 }
