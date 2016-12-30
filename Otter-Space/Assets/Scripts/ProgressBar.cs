@@ -5,14 +5,18 @@ using UnityEngine.UI;
 
 public class ProgressBar : MonoBehaviour
 {
+
+    public GameObject resources;
     public float currentAmount;
     public Transform loadingBar;
 
-	// Use this for initialization
-	void Start () {}
+    void Start()
+    {
+    }
 	
 	// Update is called once per frame
 	void Update () {
+        currentAmount = resources.GetComponent<GatherResources>().currentMetal;
         loadingBar.GetComponent<Image>().fillAmount = currentAmount / 100;
     }
 }
