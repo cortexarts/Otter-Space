@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using GooglePlayGames;
+using UnityEngine.SocialPlatforms;
 
 public class MenuManager : MonoBehaviour
 {
@@ -80,12 +82,12 @@ public class MenuManager : MonoBehaviour
 
     public void ShowRate()
     {
-            Application.OpenURL("market://details?id=com.nianticlabs.pokemongo");
+            Application.OpenURL("market://details?id=com.cortexarts.otterspace");
     }
 
     public void ToggleHighScore()
     {
-        Application.OpenURL("market://details?id=com.nianticlabs.pokemongo");
+        Social.ShowLeaderboardUI();
     }
 
     public void ToggleOptions() {
@@ -99,5 +101,19 @@ public class MenuManager : MonoBehaviour
             optionsMenu.SetActive(true);
             showOptions = true;
         }
+    }
+
+    public void Authenticate()
+    {
+        Social.localUser.Authenticate((bool success) => {
+            if (success)
+            {
+                Debug.Log("LOGGED IN!");
+            }
+            else
+            {
+                Debug.Log("NOT LOGGED IN!");
+            }
+        });
     }
 }
