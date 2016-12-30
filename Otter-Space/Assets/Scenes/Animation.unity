@@ -155,7 +155,7 @@ Transform:
   m_Children:
   - {fileID: 1452601165}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &89607977
 Animator:
@@ -254,7 +254,7 @@ Transform:
   m_LocalScale: {x: 0.47810638, y: 0.47810638, z: 0.47810638}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &390918972
 GameObject:
@@ -321,7 +321,7 @@ Transform:
   m_Children:
   - {fileID: 1766411632}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &390918975
 Animator:
@@ -355,6 +355,53 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!1001 &590158347
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4406572640129784, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406572640129784, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406572640129784, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406572640129784, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406572640129784, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406572640129784, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406572640129784, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406572640129784, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114827490266884064, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9,
+        type: 2}
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 581584513174edf4fba32ae4522ee0f0, type: 3}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &613295134
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +413,7 @@ GameObject:
   - component: {fileID: 613295137}
   - component: {fileID: 613295136}
   - component: {fileID: 613295138}
+  - component: {fileID: 613295139}
   m_Layer: 5
   m_Name: messeduptext
   m_TagString: Untagged
@@ -423,9 +471,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Why you, as simple otter,
+  m_Text: 'Why you, as a simple otter,
 
-    are shuttled into otterspace is obvious:
+    are shuttled into otterspace is obvious.
 
     Earth is messed up by humans.'
 --- !u!222 &613295137
@@ -451,6 +499,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &613295139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 613295134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &875589008
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,7 +576,7 @@ Transform:
   m_LocalScale: {x: 2.0798955, y: 2.0798955, z: 2.0798955}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &875589011
 Animator:
@@ -544,6 +606,7 @@ GameObject:
   - component: {fileID: 912198242}
   - component: {fileID: 912198241}
   - component: {fileID: 912198240}
+  - component: {fileID: 912198244}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -624,13 +687,24 @@ RectTransform:
   - {fileID: 1555790460}
   - {fileID: 1225019229}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &912198244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 912198239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 657c48f4a89858c469fa97213e4e052e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1079515261
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,7 +785,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1180176957
 GameObject:
@@ -724,6 +798,7 @@ GameObject:
   - component: {fileID: 1180176960}
   - component: {fileID: 1180176959}
   - component: {fileID: 1180176961}
+  - component: {fileID: 1180176962}
   m_Layer: 5
   m_Name: nametext
   m_TagString: Untagged
@@ -781,7 +856,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: "You are Captain \nDimmitri"
+  m_Text: "You are \nCaptain Dimitri"
 --- !u!222 &1180176960
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -805,6 +880,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1180176962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1180176957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1225019228
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,6 +905,7 @@ GameObject:
   - component: {fileID: 1225019232}
   - component: {fileID: 1225019231}
   - component: {fileID: 1225019230}
+  - component: {fileID: 1225019233}
   m_Layer: 5
   m_Name: decentwood
   m_TagString: Untagged
@@ -884,7 +974,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 4
+    m_Alignment: 7
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 0
@@ -892,13 +982,27 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'and find some decent wood
 
-    on the way'
+    on the way.'
 --- !u!222 &1225019232
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1225019228}
+--- !u!114 &1225019233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1225019228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1318084971
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,7 +1063,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1326035604
 GameObject:
@@ -972,6 +1076,7 @@ GameObject:
   - component: {fileID: 1326035607}
   - component: {fileID: 1326035606}
   - component: {fileID: 1326035608}
+  - component: {fileID: 1326035609}
   m_Layer: 5
   m_Name: spaceshiptext
   m_TagString: Untagged
@@ -1029,7 +1134,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: "The amazing commander of the \nSoviet Onion Spaceship"
+  m_Text: "Commander of the last spaceship of \nthe Soviet Onion."
 --- !u!222 &1326035607
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1053,6 +1158,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1326035609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1326035604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1452601164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,6 +1247,7 @@ GameObject:
   - component: {fileID: 1555790462}
   - component: {fileID: 1555790461}
   - component: {fileID: 1555790463}
+  - component: {fileID: 1555790464}
   m_Layer: 5
   m_Name: electedtext
   m_TagString: Untagged
@@ -1209,6 +1329,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1555790464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1555790459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1617769315
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,6 +1354,7 @@ GameObject:
   - component: {fileID: 1617769319}
   - component: {fileID: 1617769318}
   - component: {fileID: 1617769317}
+  - component: {fileID: 1617769320}
   m_Layer: 5
   m_Name: notreetext
   m_TagString: Untagged
@@ -1294,13 +1429,27 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "There is no tree, soil or \nwater fit for you \nto live in or on"
+  m_Text: "There is no tree, soil or \nwater fit for you anymore."
 --- !u!222 &1617769319
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1617769315}
+--- !u!114 &1617769320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1617769315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1646068388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1363,7 +1512,7 @@ Transform:
   m_LocalScale: {x: 0.3842481, y: 0.3758866, z: 0.543684}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1766411631
 GameObject:
@@ -1514,5 +1663,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
