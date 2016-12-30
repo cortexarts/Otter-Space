@@ -119,7 +119,7 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleIdentifier: com.CortexArts.OtterSpace
-  bundleVersion: 1.0
+  bundleVersion: Beta 1.2
   preloadedAssets: []
   metroInputSource: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -194,8 +194,8 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: D:/Repositories/Otter-Space/Otter-Space/user.keystore
-  AndroidKeyaliasName: cortexartsgames@gmail.com
+  AndroidKeystoreName: 
+  AndroidKeyaliasName: 
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
   androidEnableBanner: 0
@@ -458,7 +458,7 @@ PlayerSettings:
   webGLUseWasm: 0
   webGLCompressionFormat: 1
   scriptingDefineSymbols:
-    1: CROSS_PLATFORM_INPUT
+    1: QuitButton;CROSS_PLATFORM_INPUT
     4: CROSS_PLATFORM_INPUT;MOBILE_INPUT
     7: CROSS_PLATFORM_INPUT;MOBILE_INPUT
     14: MOBILE_INPUT
@@ -559,7 +559,7 @@ PlayerSettings:
     Purchasing: 0
     UNet: 1
     Unity_Ads: 0
-  cloudProjectId: a3b06d2a-1a81-4d49-a457-451f4cf3126b
+  cloudProjectId: 59f0c78d-6a86-4d7b-9a86-08f342c456ed
   projectName: Otter Space
-  organizationId: cortexarts-game-development
+  organizationId: cortexarts
   cloudEnabled: 0

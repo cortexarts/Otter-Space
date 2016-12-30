@@ -28,6 +28,9 @@ public class MenuManager : MonoBehaviour
 	public GameObject MobileSingleStickControl;
 	private bool showControl = true;
 
+	public GameObject pauseButton;
+	private bool showPause = true;
+
     void Start()
     {
         audioManager = AudioManager.instance;
@@ -100,6 +103,8 @@ public class MenuManager : MonoBehaviour
             showOptions = false;
 			MobileSingleStickControl.SetActive (true);
 			showControl = true;
+			pauseButton.SetActive (true);
+			showPause = true;
         }
         else
         {
@@ -107,6 +112,8 @@ public class MenuManager : MonoBehaviour
             showOptions = true;
 			MobileSingleStickControl.SetActive (false);
 			showControl = false;
+			pauseButton.SetActive (false);
+			showPause = false;
         }
     }
 
