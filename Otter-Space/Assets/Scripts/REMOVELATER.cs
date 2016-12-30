@@ -12,19 +12,9 @@ public class REMOVELATER : MonoBehaviour {
     public GameObject FireLeft;
     public GameObject FireRight;
 
-    public string weaponShootSound = "RocketEngine";
-    // Caching
-    AudioManager audioManager;
-
     // Use this for initialization
     void Start()
     {
-        audioManager = AudioManager.instance;
-        if (audioManager == null)
-        {
-            Debug.LogError("FREAK OUT! No audiomanager found in scene.");
-        }
-        audioManager.PlaySound("RocketEngine");
     }
 
     // Update is called once per frame

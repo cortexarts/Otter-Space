@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
 
+    public static MenuManager instance;
+
     [SerializeField]
     string hoverOverSound = "ButtonHover";
 
@@ -16,7 +18,10 @@ public class MenuManager : MonoBehaviour
     private bool muted = false;
 
     public GameObject credits;
-    private bool showCredits;
+    private bool showCredits = false;
+
+    public GameObject optionsMenu;
+    private bool showOptions = false;
 
     void Start()
     {
@@ -81,5 +86,18 @@ public class MenuManager : MonoBehaviour
     public void ToggleHighScore()
     {
         Application.OpenURL("market://details?id=com.nianticlabs.pokemongo");
+    }
+
+    public void ToggleOptions() {
+        if (showOptions)
+        {
+            optionsMenu.SetActive(false);
+            showOptions = false;
+        }
+        else
+        {
+            optionsMenu.SetActive(true);
+            showOptions = true;
+        }
     }
 }
