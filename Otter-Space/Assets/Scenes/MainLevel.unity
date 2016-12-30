@@ -1464,11 +1464,11 @@ RectTransform:
   m_Father: {fileID: 1801307402}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.16000001, y: 0.2}
-  m_AnchorMax: {x: 0.16000001, y: 0.2}
-  m_AnchoredPosition: {x: 526, y: 33}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -15, y: 85}
   m_SizeDelta: {x: 80, y: 80}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0}
 --- !u!114 &454323087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4868,17 +4868,17 @@ Prefab:
     - target: {fileID: 20169077418544788, guid: 26aea8e39e3b3514bbb260469d1c3bbc,
         type: 2}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.2
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 20169077418544788, guid: 26aea8e39e3b3514bbb260469d1c3bbc,
         type: 2}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.2
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 20169077418544788, guid: 26aea8e39e3b3514bbb260469d1c3bbc,
         type: 2}
       propertyPath: m_NormalizedViewPortRect.x
-      value: -0.1
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4641924984906456, guid: 26aea8e39e3b3514bbb260469d1c3bbc, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4908,7 +4908,7 @@ Prefab:
     - target: {fileID: 20169077418544788, guid: 26aea8e39e3b3514bbb260469d1c3bbc,
         type: 2}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.8
+      value: 0.88
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 26aea8e39e3b3514bbb260469d1c3bbc, type: 2}
@@ -5246,7 +5246,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
+  m_UiScaleMode: 2
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

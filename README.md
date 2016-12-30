@@ -3,6 +3,8 @@
 
 Otter Space is an exploration set in space.
 
+Download the app from [Google Play](https://play.google.com/store/apps/details?id=com.CortexArts.OtterSpace)
+
 Credits & references:
 --------------------------------------
 

@@ -44,7 +44,18 @@ public class MenuManager : MonoBehaviour
     {
         audioManager.PlaySound(pressButtonSound);
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (!PlayerPrefs.HasKey("SavedLevel") || PlayerPrefs.GetInt("SavedLevel") != 1)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            PlayerPrefs.SetInt("SavedLevel", 1);
+            PlayerPrefs.Save();
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+            PlayerPrefs.SetInt("SavedLevel", 2);
+            PlayerPrefs.Save();
+        }
     }
 
     public void QuitGame()
@@ -88,7 +99,7 @@ public class MenuManager : MonoBehaviour
 
     public void ShowRate()
     {
-            Application.OpenURL("market://details?id=com.cortexarts.otterspace");
+        Application.OpenURL("market://details?id=com.CortexArts.OtterSpace");
     }
 
     public void ToggleHighScore()
