@@ -11,7 +11,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Cortexarts
-  productName: Otter-Space
+  productName: Otter Space Beta
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13333334, g: 0.17254902, b: 0.21176471, a: 1}
@@ -466,8 +466,9 @@ PlayerSettings:
   XboxOnePersistentLocalStorageSize: 0
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Build: 1
     UNet: 1
   cloudProjectId: 192e4748-bb87-46e5-9744-34bec6cce83c
   projectName: Otter-Space
-  organizationId: cortexarts
+  organizationId: feiko-van-dijk
   cloudEnabled: 0

@@ -116,6 +116,7 @@ public class MenuManager : MonoBehaviour
 			showControl = true;
 			pauseButton.SetActive (true);
 			showPause = true;
+			Time.timeScale = 1;
         }
         else
         {
@@ -125,6 +126,7 @@ public class MenuManager : MonoBehaviour
 			showControl = false;
 			pauseButton.SetActive (false);
 			showPause = false;
+			Time.timeScale = 0;
         }
     }
 
