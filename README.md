@@ -1,7 +1,7 @@
 [Otter Space](https://github.com/cortexarts/Otter-Space)
 ==================================================
 
-Otter Space is an exploration set in space.
+Otter Space is an educative space adventure.
 
 Download the app from [Google Play](https://play.google.com/store/apps/details?id=com.CortexArts.OtterSpace)
 

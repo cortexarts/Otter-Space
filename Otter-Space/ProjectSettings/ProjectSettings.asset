@@ -119,13 +119,13 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleIdentifier: com.CortexArts.OtterSpace
-  bundleVersion: 1.1
+  bundleVersion: 0.1
   preloadedAssets: []
   metroInputSource: 0
   m_HolographicPauseOnTrackingLoss: 1
   xboxOneDisableKinectGpuReservation: 0
   protectGraphicsMemory: 0
-  AndroidBundleVersionCode: 4
+  AndroidBundleVersionCode: 5
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
   aotOptions: 
@@ -198,7 +198,7 @@ PlayerSettings:
   AndroidKeyaliasName: cortexartsgames@gmail.com
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
-  androidEnableBanner: 1
+  androidEnableBanner: 0
   m_AndroidBanners:
   - width: 320
     height: 180
@@ -466,9 +466,9 @@ PlayerSettings:
   XboxOnePersistentLocalStorageSize: 0
   vrEditorSettings: {}
   cloudServicesEnabled:
-    Build: 1
+    Build: 0
     UNet: 1
-  cloudProjectId: 192e4748-bb87-46e5-9744-34bec6cce83c
-  projectName: Otter-Space
-  organizationId: feiko-van-dijk
+  cloudProjectId: a3b06d2a-1a81-4d49-a457-451f4cf3126b
+  projectName: Otter Space
+  organizationId: cortexarts-game-development
   cloudEnabled: 0
