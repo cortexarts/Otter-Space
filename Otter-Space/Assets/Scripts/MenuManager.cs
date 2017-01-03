@@ -25,6 +25,12 @@ public class MenuManager : MonoBehaviour
     public GameObject optionsMenu;
     private bool showOptions = false;
 
+	public GameObject MobileSingleStickControl;
+	private bool showControl = true;
+
+	public GameObject pauseButton;
+	private bool showPause = true;
+
     void Start()
     {
         audioManager = AudioManager.instance;
@@ -106,11 +112,21 @@ public class MenuManager : MonoBehaviour
         {
             optionsMenu.SetActive(false);
             showOptions = false;
+			MobileSingleStickControl.SetActive (true);
+			showControl = true;
+			pauseButton.SetActive (true);
+			showPause = true;
+			Time.timeScale = 1;
         }
         else
         {
             optionsMenu.SetActive(true);
             showOptions = true;
+			MobileSingleStickControl.SetActive (false);
+			showControl = false;
+			pauseButton.SetActive (false);
+			showPause = false;
+			Time.timeScale = 0;
         }
     }
 
