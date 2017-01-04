@@ -21,9 +21,9 @@ UnityConnectSettings:
     m_TestEventUrl: 
     m_TestConfigUrl: 
   UnityAdsSettings:
-    m_Enabled: 0
+    m_Enabled: 1
     m_InitializeOnStartup: 0
     m_TestMode: 0
-    m_EnabledPlatforms: 4294964991
+    m_EnabledPlatforms: 4294967039
     m_IosGameId: 1250389
     m_AndroidGameId: 1250388
