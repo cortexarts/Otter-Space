@@ -2051,6 +2051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveForce: 12
   boostMultiplier: 2
+  rotationDamping: 0.01
   fireanimation: {fileID: 1604916401}
 --- !u!1 &605702309
 GameObject:
