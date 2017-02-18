@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GM
   - Planet
+  - Glow
   layers:
   - Default
   - TransparentFX

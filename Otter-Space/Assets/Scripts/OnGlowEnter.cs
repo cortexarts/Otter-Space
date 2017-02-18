@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OnGlowEnter : MonoBehaviour {
 
@@ -38,16 +39,20 @@ public class OnGlowEnter : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == "Planet")
+        if (coll.gameObject.tag == "Glow")
         {
             PopUp.SetActive(true);
             collided = true;
+        }
+        else if (coll.gameObject.tag == "Planet")
+        {
+            SceneManager.LoadScene("Landing");
         }
      }
 
     void OnTriggerExit2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == "Planet")
+        if (coll.gameObject.tag == "Glow")
         {
             PopUp.SetActive(false);
             leaving = true;
