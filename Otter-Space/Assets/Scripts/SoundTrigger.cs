@@ -7,7 +7,7 @@ public class SoundTrigger : MonoBehaviour {
     public GameObject Earth;
     public GameObject Launch;
 
-    public string weaponShootSound = "RocketEngine";
+    public string soundToTrigger = "RocketEngine";
     // Caching
 
     AudioManager audioManager;
@@ -30,7 +30,7 @@ public class SoundTrigger : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Player")
         {
-            audioManager.PlaySound("RocketEngine");
+            audioManager.PlaySound(soundToTrigger);
         }
     }
 
@@ -38,7 +38,7 @@ public class SoundTrigger : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Player")
         {
-            audioManager.StopSound("RocketEngine");
+            audioManager.StopSound(soundToTrigger);
             Earth.SetActive(true);
             Launch.SetActive(false);
         }
