@@ -31,6 +31,9 @@ public class MenuManager : MonoBehaviour
 	public GameObject pauseButton;
 	private bool showPause = true;
 
+    public GameObject mutedBtn;
+    public GameObject UnmutedBtn;
+
     void Start()
     {
         audioManager = AudioManager.instance;
@@ -75,11 +78,15 @@ public class MenuManager : MonoBehaviour
         if (muted)
         {
             audioListener.SetActive(false);
+            UnmutedBtn.SetActive(true);
+            mutedBtn.SetActive(false);
             muted = false;
         }
         else
         {
             audioListener.SetActive(true);
+            mutedBtn.SetActive(true);
+            UnmutedBtn.SetActive(false);
             muted = true;
         }
     }
