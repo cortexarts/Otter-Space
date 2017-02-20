@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class OnGlowEnter : MonoBehaviour {
-
+    private string planetname;
     private bool collided = false;
     private bool leaving = false;
     public GameObject PopUp;
@@ -13,9 +15,17 @@ public class OnGlowEnter : MonoBehaviour {
     void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    void Save()
+    {
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Create(Application.persistentDataPath + "/savedGames.gd");
+        bf.Serialize(file, planetname);
+        file.Close();
+    }
+
+    // Update is called once per frame
+    void Update () {
         if (collided)
         {
             Camera.main.orthographicSize += 8.0f * Time.deltaTime;
@@ -46,6 +56,8 @@ public class OnGlowEnter : MonoBehaviour {
         }
         else if (coll.gameObject.tag == "Planet")
         {
+            planetname = coll.gameObject.name;
+            Save();
             SceneManager.LoadScene("Landing");
         }
      }
