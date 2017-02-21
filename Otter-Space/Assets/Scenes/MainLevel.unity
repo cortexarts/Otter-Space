@@ -100,9 +100,11 @@ GameObject:
   m_Component:
   - component: {fileID: 21857779}
   - component: {fileID: 21857780}
+  - component: {fileID: 21857782}
+  - component: {fileID: 21857781}
   m_Layer: 0
   m_Name: Earth
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,6 +159,34 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!58 &21857781
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 21857778}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.8
+--- !u!58 &21857782
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 21857778}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2
 --- !u!1001 &46072179
 Prefab:
   m_ObjectHideFlags: 0
@@ -253,6 +283,26 @@ Prefab:
         type: 2}
       propertyPath: Size
       value: 40.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: Icon
+      value: 
+      objectReference: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.r
+      value: 0.9058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.g
+      value: 0.6784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.b
+      value: 0.1254902
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09bc20cf0fac47245bb28a1f3ffcb060, type: 2}
@@ -402,9 +452,11 @@ GameObject:
   m_Component:
   - component: {fileID: 101660691}
   - component: {fileID: 101660690}
+  - component: {fileID: 101660693}
+  - component: {fileID: 101660692}
   m_Layer: 0
   m_Name: Saturn
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -459,6 +511,34 @@ Transform:
   m_Father: {fileID: 349457273}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &101660692
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 101660689}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3.6
+--- !u!58 &101660693
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 101660689}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.6
 --- !u!1 &107264760 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1750657207759922, guid: 77debd76dfe10ee449f950308b3328bc,
@@ -642,12 +722,12 @@ Prefab:
     - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
         type: 2}
       propertyPath: OffSet.y
-      value: 184
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
         type: 2}
       propertyPath: OffSet.x
-      value: -10.9
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
         type: 2}
@@ -689,6 +769,27 @@ Prefab:
       propertyPath: Size
       value: 40.7
       objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.r
+      value: 0.63529414
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.g
+      value: 0.5568628
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.b
+      value: 0.1137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: Icon
+      value: 
+      objectReference: {fileID: 21300114, guid: b2ff3b281537fbc4d91af3e848afde5c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09bc20cf0fac47245bb28a1f3ffcb060, type: 2}
   m_IsPrefabParent: 0
@@ -770,7 +871,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0.000000007450581, y: 0}
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 5
 --- !u!1 &349457272
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,9 +951,11 @@ GameObject:
   m_Component:
   - component: {fileID: 362607241}
   - component: {fileID: 362607242}
+  - component: {fileID: 362607244}
+  - component: {fileID: 362607243}
   m_Layer: 0
   m_Name: Jupiter
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -907,6 +1010,34 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!58 &362607243
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 362607240}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 4.6
+--- !u!58 &362607244
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 362607240}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3.4
 --- !u!1 &370423201
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,9 +1047,11 @@ GameObject:
   m_Component:
   - component: {fileID: 370423202}
   - component: {fileID: 370423203}
+  - component: {fileID: 370423205}
+  - component: {fileID: 370423204}
   m_Layer: 0
   m_Name: Sun
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -973,6 +1106,34 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!58 &370423204
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 370423201}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 12
+--- !u!58 &370423205
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 370423201}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 9
 --- !u!1 &381134934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,6 +1299,27 @@ Prefab:
       propertyPath: m_Name
       value: RadarSprite
       objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.r
+      value: 0.98823535
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.g
+      value: 0.5882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.b
+      value: 0.13725491
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: Icon
+      value: 
+      objectReference: {fileID: 21300114, guid: b2ff3b281537fbc4d91af3e848afde5c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09bc20cf0fac47245bb28a1f3ffcb060, type: 2}
   m_IsPrefabParent: 0
@@ -1155,9 +1337,11 @@ GameObject:
   m_Component:
   - component: {fileID: 470499756}
   - component: {fileID: 470499757}
+  - component: {fileID: 470499759}
+  - component: {fileID: 470499758}
   m_Layer: 0
   m_Name: Venus
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1212,6 +1396,34 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!58 &470499758
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 470499755}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.5
+--- !u!58 &470499759
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 470499755}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.9
 --- !u!1 &489768251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,9 +1497,11 @@ GameObject:
   m_Component:
   - component: {fileID: 514308381}
   - component: {fileID: 514308382}
+  - component: {fileID: 514308384}
+  - component: {fileID: 514308383}
   m_Layer: 0
   m_Name: Mercurius
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1342,6 +1556,34 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!58 &514308383
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 514308380}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2
+--- !u!58 &514308384
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 514308380}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.5
 --- !u!1 &566087145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1638,7 +1880,7 @@ GameObject:
   - component: {fileID: 662715955}
   m_Layer: 0
   m_Name: Jupiter_glow
-  m_TagString: Untagged
+  m_TagString: Glow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1704,7 +1946,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0.000000007450581, y: 0}
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 4
 --- !u!1 &673097964
 GameObject:
   m_ObjectHideFlags: 0
@@ -1717,7 +1959,7 @@ GameObject:
   - component: {fileID: 673097967}
   m_Layer: 0
   m_Name: Mercurius_glow
-  m_TagString: Untagged
+  m_TagString: Glow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1730,7 +1972,7 @@ Transform:
   m_GameObject: {fileID: 673097964}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1}
   m_Children: []
   m_Father: {fileID: 514308381}
   m_RootOrder: 0
@@ -1948,6 +2190,27 @@ Prefab:
       propertyPath: m_Name
       value: RadarSprite
       objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.r
+      value: 0.9686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.g
+      value: 0.7176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.b
+      value: 0.45882356
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: Icon
+      value: 
+      objectReference: {fileID: 21300114, guid: b2ff3b281537fbc4d91af3e848afde5c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09bc20cf0fac47245bb28a1f3ffcb060, type: 2}
   m_IsPrefabParent: 0
@@ -2278,6 +2541,27 @@ Prefab:
       propertyPath: Size
       value: 40.7
       objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.r
+      value: 0.9333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.g
+      value: 0.24313727
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.b
+      value: 0.14901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: Icon
+      value: 
+      objectReference: {fileID: 21300114, guid: b2ff3b281537fbc4d91af3e848afde5c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09bc20cf0fac47245bb28a1f3ffcb060, type: 2}
   m_IsPrefabParent: 0
@@ -2336,7 +2620,7 @@ Prefab:
     - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
         type: 2}
       propertyPath: OffSet.y
-      value: 391
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
         type: 2}
@@ -2383,6 +2667,27 @@ Prefab:
       propertyPath: Size
       value: 40.7
       objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.r
+      value: 0.38823533
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.g
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.b
+      value: 0.38823533
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: Icon
+      value: 
+      objectReference: {fileID: 21300114, guid: b2ff3b281537fbc4d91af3e848afde5c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09bc20cf0fac47245bb28a1f3ffcb060, type: 2}
   m_IsPrefabParent: 0
@@ -2631,6 +2936,27 @@ Prefab:
       propertyPath: m_Name
       value: RadarSprite
       objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.r
+      value: 0.8941177
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.g
+      value: 0.7725491
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.b
+      value: 0.48627454
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: Icon
+      value: 
+      objectReference: {fileID: 21300114, guid: b2ff3b281537fbc4d91af3e848afde5c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09bc20cf0fac47245bb28a1f3ffcb060, type: 2}
   m_IsPrefabParent: 0
@@ -2783,7 +3109,7 @@ GameObject:
   - component: {fileID: 1284277736}
   m_Layer: 0
   m_Name: Mars_glow
-  m_TagString: Untagged
+  m_TagString: Glow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2796,7 +3122,7 @@ Transform:
   m_GameObject: {fileID: 1284277733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.7, y: 1.7, z: 1}
+  m_LocalScale: {x: 1.6, y: 1.6, z: 1}
   m_Children: []
   m_Father: {fileID: 1555437480}
   m_RootOrder: 0
@@ -2849,7 +3175,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0.000000007450581, y: 0}
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 2.2
 --- !u!4 &1327898652 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4191771419314912, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
@@ -2952,6 +3278,27 @@ Prefab:
       propertyPath: Size
       value: 40.7
       objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.r
+      value: 0.0627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.g
+      value: 0.2509804
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.b
+      value: 0.6392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: Icon
+      value: 
+      objectReference: {fileID: 21300114, guid: b2ff3b281537fbc4d91af3e848afde5c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09bc20cf0fac47245bb28a1f3ffcb060, type: 2}
   m_IsPrefabParent: 0
@@ -2967,7 +3314,7 @@ GameObject:
   - component: {fileID: 1347690524}
   m_Layer: 0
   m_Name: Sun_glow
-  m_TagString: Untagged
+  m_TagString: Glow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3033,7 +3380,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0.000000007450581, y: 0}
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 10
 --- !u!1 &1361050449
 GameObject:
   m_ObjectHideFlags: 0
@@ -3210,6 +3557,27 @@ Prefab:
       propertyPath: Size
       value: 40.7
       objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.r
+      value: 0.1254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.g
+      value: 0.7254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: Icon
+      value: 
+      objectReference: {fileID: 21300114, guid: b2ff3b281537fbc4d91af3e848afde5c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09bc20cf0fac47245bb28a1f3ffcb060, type: 2}
   m_IsPrefabParent: 0
@@ -3382,9 +3750,10 @@ GameObject:
   - component: {fileID: 1555437480}
   - component: {fileID: 1555437479}
   - component: {fileID: 1555437481}
+  - component: {fileID: 1555437482}
   m_Layer: 0
   m_Name: Mars
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3452,7 +3821,21 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.19
+  m_Radius: 2
+--- !u!58 &1555437482
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1555437478}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.5
 --- !u!1001 &1562848674
 Prefab:
   m_ObjectHideFlags: 0
@@ -3550,6 +3933,27 @@ Prefab:
       propertyPath: Size
       value: 40.7
       objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.r
+      value: 0.7058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.g
+      value: 0.5058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.b
+      value: 0.37254903
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: Icon
+      value: 
+      objectReference: {fileID: 21300114, guid: b2ff3b281537fbc4d91af3e848afde5c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09bc20cf0fac47245bb28a1f3ffcb060, type: 2}
   m_IsPrefabParent: 0
@@ -3566,7 +3970,7 @@ GameObject:
   - component: {fileID: 1612522908}
   m_Layer: 0
   m_Name: Pluto_glow
-  m_TagString: Untagged
+  m_TagString: Glow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3632,7 +4036,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0.000000029802322, y: 0}
   serializedVersion: 2
-  m_Radius: 1.805
+  m_Radius: 2
 --- !u!114 &1612522909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3687,7 +4091,7 @@ GameObject:
   - component: {fileID: 1724779101}
   m_Layer: 0
   m_Name: Neptune_glow
-  m_TagString: Untagged
+  m_TagString: Glow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3851,6 +4255,27 @@ Prefab:
       propertyPath: Size
       value: 40.7
       objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.r
+      value: 0.39607847
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.g
+      value: 0.40000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: IconColor.b
+      value: 0.34901962
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824251677281112, guid: 09bc20cf0fac47245bb28a1f3ffcb060,
+        type: 2}
+      propertyPath: Icon
+      value: 
+      objectReference: {fileID: 21300114, guid: b2ff3b281537fbc4d91af3e848afde5c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09bc20cf0fac47245bb28a1f3ffcb060, type: 2}
   m_IsPrefabParent: 0
@@ -3927,9 +4352,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1798846161}
   - component: {fileID: 1798846162}
+  - component: {fileID: 1798846163}
   m_Layer: 0
   m_Name: Earth_glow
-  m_TagString: Untagged
+  m_TagString: Glow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3982,6 +4408,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!58 &1798846163
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1798846160}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.2
 --- !u!1001 &1808178948
 Prefab:
   m_ObjectHideFlags: 0
@@ -4247,7 +4687,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.2
+  m_Radius: 1.6
 --- !u!58 &1838272010
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4261,7 +4701,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: -0.000000029802322, y: 0.0000019073486}
   serializedVersion: 2
-  m_Radius: 2.7
+  m_Radius: 2
 --- !u!1 &1900148939
 GameObject:
   m_ObjectHideFlags: 0
@@ -4449,9 +4889,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1947827775}
   - component: {fileID: 1947827774}
+  - component: {fileID: 1947827776}
   m_Layer: 0
   m_Name: Death_star
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4504,6 +4945,20 @@ Transform:
   m_Father: {fileID: 349457273}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1947827776
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1947827773}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.05}
+  serializedVersion: 2
+  m_Radius: 2.6
 --- !u!1 &1965100289 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1683159955207512, guid: 77debd76dfe10ee449f950308b3328bc,
@@ -4523,9 +4978,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2021206962}
   - component: {fileID: 2021206961}
+  - component: {fileID: 2021206964}
+  - component: {fileID: 2021206963}
   m_Layer: 0
   m_Name: Uranus
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4580,6 +5037,34 @@ Transform:
   m_Father: {fileID: 349457273}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &2021206963
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2021206960}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.5
+--- !u!58 &2021206964
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2021206960}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.8
 --- !u!1 &2042748677
 GameObject:
   m_ObjectHideFlags: 0
@@ -4589,9 +5074,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2042748679}
   - component: {fileID: 2042748678}
+  - component: {fileID: 2042748681}
+  - component: {fileID: 2042748680}
   m_Layer: 0
   m_Name: Neptune
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4646,6 +5133,34 @@ Transform:
   m_Father: {fileID: 349457273}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &2042748680
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2042748677}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.5
+--- !u!58 &2042748681
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2042748677}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.8
 --- !u!1 &2047248230
 GameObject:
   m_ObjectHideFlags: 0
@@ -4658,7 +5173,7 @@ GameObject:
   - component: {fileID: 2047248233}
   m_Layer: 0
   m_Name: Venus_glow
-  m_TagString: Untagged
+  m_TagString: Glow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4724,7 +5239,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0.000000007450581, y: 0}
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 2.2
 --- !u!1001 &2056717455
 Prefab:
   m_ObjectHideFlags: 0
@@ -4986,9 +5501,10 @@ GameObject:
   - component: {fileID: 2135702713}
   - component: {fileID: 2135702712}
   - component: {fileID: 2135702714}
+  - component: {fileID: 2135702715}
   m_Layer: 0
   m_Name: Pluto
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5052,8 +5568,22 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0.000000007450581, y: 0}
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 1.1
+--- !u!58 &2135702715
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2135702711}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.6
