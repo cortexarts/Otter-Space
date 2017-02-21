@@ -3524,6 +3524,29 @@ SpriteRenderer:
   m_Color: {r: 0.8078432, g: 0.60651547, b: 0.36492226, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &1048471756 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1279008506160672, guid: 77debd76dfe10ee449f950308b3328bc,
+    type: 2}
+  m_PrefabInternal: {fileID: 2074029718}
+--- !u!224 &1048471757 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224502873816922998, guid: 77debd76dfe10ee449f950308b3328bc,
+    type: 2}
+  m_PrefabInternal: {fileID: 2074029718}
+--- !u!114 &1048471758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1048471756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4528fbbe21f19244eb9cdee641760f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuelAmount: 0
+  loadingBar: {fileID: 1048471757}
 --- !u!1 &1065087252
 GameObject:
   m_ObjectHideFlags: 0
@@ -5283,7 +5306,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Earth: {fileID: 2113921965}
   Moon: {fileID: 2111138780}
-  Mars: {fileID: 0}
+  Mars: {fileID: 817895371}
+  Jupiter: {fileID: 1549531443}
+  Mercurius: {fileID: 1995847151}
+  Neptune: {fileID: 797747103}
+  Saturn: {fileID: 1436807618}
+  Uranus: {fileID: 1269683700}
+  Venus: {fileID: 673085260}
+  Pluto: {fileID: 391103426}
+  Sun: {fileID: 253380389}
 --- !u!1 &1735483502
 GameObject:
   m_ObjectHideFlags: 0
@@ -6288,7 +6319,10 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114955522582005734, guid: 77debd76dfe10ee449f950308b3328bc, type: 2}
+    - {fileID: 114238423039089706, guid: 77debd76dfe10ee449f950308b3328bc, type: 2}
+    - {fileID: 114123285481416554, guid: 77debd76dfe10ee449f950308b3328bc, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 77debd76dfe10ee449f950308b3328bc, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &2077097495 stripped

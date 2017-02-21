@@ -14,7 +14,7 @@ public class FloatingPlayer2DController : MonoBehaviour
     void Start ()
 	{
 		myBody = this.GetComponent<Rigidbody2D>();
-	}
+    }
 	
 	void FixedUpdate ()
 	{
@@ -33,6 +33,7 @@ public class FloatingPlayer2DController : MonoBehaviour
         if (moveVec.sqrMagnitude > 0.0f)
         {
             fireanimation.SetActive(true);
+            GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount -= 0.001f * Time.timeSinceLevelLoad;
         }
         else
         {

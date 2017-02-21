@@ -12,17 +12,9 @@ public class OnGlowEnter : MonoBehaviour {
     public GameObject PopUp;
 
     // Use this for initialization
-    void Start () {
-		
-	}
-
-    void Save()
+    void Start ()
     {
-        BinaryFormatter bf = new BinaryFormatter();
-        FileStream file = File.Create(Application.persistentDataPath + "/savedGames.gd");
-        bf.Serialize(file, planetname);
-        file.Close();
-    }
+	}
 
     // Update is called once per frame
     void Update () {
@@ -57,7 +49,12 @@ public class OnGlowEnter : MonoBehaviour {
         else if (coll.gameObject.tag == "Planet")
         {
             planetname = coll.gameObject.name;
-            Save();
+
+            //Save to file
+            System.IO.File.WriteAllText("PlayerProgress.txt", planetname);
+
+            PlayerPrefs.SetFloat("fuelAmount", GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount);
+
             SceneManager.LoadScene("Landing");
         }
      }
