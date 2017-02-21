@@ -28,30 +28,37 @@ Credits:
 
 - **Unity3D**: https://unity3d.com/ `Unity Technologies`.
 
-Manager
 ***
+Manager
+
 [Marc Frencken](https://github.com/InnoCrator)
 
-Designers
 ***
+Designers
+
 [Feiko van Dijk](https://github.com/henkiepenkie)
 [Marthijn van Deelen](https://github.com/24lightning)
 
-Artists
 ***
+Artists
+
 [Daan Jansen](https://github.com/Danoontjen)
 [Daan van Leeuwen](https://github.com/superwortel)
 
-Programmer
 ***
+Programmer
+
 [Jasper Drescher](https://github.com/JasperDre)
 
-Animators
 ***
+Animator
+
 [Harmjan Lever](https://github.com/harmjanfl)
 
-Music
 ***
+Music
+
 [Tom Bouwmeister](https://github.com/Bouwmaster17)
+***
 
 Project made by [CortexArts](https://github.com/cortexarts)
