@@ -8,9 +8,9 @@ Why you, as a simple otter, are shuttled into otterspace is obvious: planet Eart
 There is no tree, soil or water fit for you to live. The Soviet Onion has elected you to discover a new haven for otterkind, 
 and find some decent wood on the go. You have a nose for trees nonetheless.
 
-Download the app from [Google Play](https://play.google.com/store/apps/details?id=com.CortexArts.OtterSpace)
+- Download the app from [Google Play](https://play.google.com/store/apps/details?id=com.CortexArts.OtterSpace)
 
-Get the latest release with the source code: https://github.com/cortexarts/Otter-Space/releases/tag/v0.1
+- Get the latest release with the source code from [Github](https://github.com/cortexarts/Otter-Space/releases/tag/v0.1)
 
 Mechanics:
 --------------------------------------
@@ -30,7 +30,7 @@ Mechanics:
 Credits:
 --------------------------------------
 
-**Unity3D**: https://unity3d.com/ `Unity Technologies`.
+**Unity3D**: https://unity3d.com/ `Unity Technologies`
 
 ***
 **Manager**
@@ -63,6 +63,7 @@ Credits:
 **Music**
 
 - [Tom Bouwmeister](https://github.com/Bouwmaster17)
+
 ***
 
 Project made by [CortexArts](https://github.com/cortexarts)
