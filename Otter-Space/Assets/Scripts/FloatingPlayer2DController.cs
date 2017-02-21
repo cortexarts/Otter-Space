@@ -8,7 +8,7 @@ public class FloatingPlayer2DController : MonoBehaviour
     public float moveForce = 0.5f;
     public float boostMultiplier = 2;
     public float rotationDamping = 0.01f;
-    private bool refueling = false;
+    public bool refueling = false;
     Rigidbody2D myBody;
 
     public GameObject fireanimation;

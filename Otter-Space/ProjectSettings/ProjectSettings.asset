@@ -467,6 +467,9 @@ PlayerSettings:
   vrEditorSettings: {}
   cloudServicesEnabled:
     Build: 0
+    Collab: 0
+    ErrorHub: 0
+    Hub: 0
     UNet: 1
   cloudProjectId: a3b06d2a-1a81-4d49-a457-451f4cf3126b
   projectName: Otter Space

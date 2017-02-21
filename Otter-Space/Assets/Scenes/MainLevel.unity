@@ -2051,21 +2051,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224135438117329776, guid: 77debd76dfe10ee449f950308b3328bc,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.70000076
-      objectReference: {fileID: 0}
-    - target: {fileID: 224135438117329776, guid: 77debd76dfe10ee449f950308b3328bc,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -34.800003
-      objectReference: {fileID: 0}
-    - target: {fileID: 114677160416636752, guid: 77debd76dfe10ee449f950308b3328bc,
-        type: 2}
-      propertyPath: fuelAmount
-      value: 100
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 77debd76dfe10ee449f950308b3328bc, type: 2}
   m_IsPrefabParent: 0
