@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class FloatingPlayer2DController : MonoBehaviour
@@ -7,6 +8,7 @@ public class FloatingPlayer2DController : MonoBehaviour
     public float moveForce = 0.5f;
     public float boostMultiplier = 2;
     public float rotationDamping = 0.01f;
+    private bool refueling = false;
     Rigidbody2D myBody;
 
     public GameObject fireanimation;
@@ -33,11 +35,42 @@ public class FloatingPlayer2DController : MonoBehaviour
         if (moveVec.sqrMagnitude > 0.0f)
         {
             fireanimation.SetActive(true);
-            GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount -= 0.001f * Time.timeSinceLevelLoad;
+            if (GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount > 0)
+            {
+                if (isBoosting)
+                {
+                    GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount -= 0.005f * Time.timeSinceLevelLoad;
+                }
+                else
+                {
+                    GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount -= 0.001f * Time.timeSinceLevelLoad;
+                }
+            }
         }
         else
         {
             fireanimation.SetActive(false);
         }
+
+        if (refueling && GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount < 100)
+        {
+            GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount += 0.01f * Time.timeSinceLevelLoad;
+        }
 	}
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        if (coll.gameObject.tag == "Ground")
+        {
+            refueling = true;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D coll)
+    {
+        if (coll.gameObject.tag == "Ground")
+        {
+            refueling = false;
+        }
+    }
 }
