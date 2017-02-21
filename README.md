@@ -25,7 +25,6 @@ Mechanics:
 - 2D animations
 - Game states
 - Persistent data saving and loading
-- Dynamic data saving and loading
 
 Credits:
 --------------------------------------
@@ -66,4 +65,4 @@ Credits:
 
 ***
 
-Project made by [CortexArts](https://github.com/cortexarts)
+This project is developed and maintained by [CortexArts](https://github.com/cortexarts)
