@@ -10,6 +10,8 @@ and find some decent wood on the go. You have a nose for trees nonetheless.
 
 Download the app from [Google Play](https://play.google.com/store/apps/details?id=com.CortexArts.OtterSpace)
 
+Get the latest release with the source code: https://github.com/cortexarts/Otter-Space/releases/tag/v0.1
+
 Mechanics:
 --------------------------------------
 - Google Play Services for saving and loading progress, highscores, and achievements
@@ -20,45 +22,47 @@ Mechanics:
 - 2D rigidbody movement
 - 2D UV-scrolling
 - 2D vector math
-- Game states
 - 2D animations
+- Game states
+- Persistent data saving and loading
+- Dynamic data saving and loading
 
 Credits:
 --------------------------------------
 
-- **Unity3D**: https://unity3d.com/ `Unity Technologies`.
+**Unity3D**: https://unity3d.com/ `Unity Technologies`.
 
 ***
-Manager
+**Manager**
 
-[Marc Frencken](https://github.com/InnoCrator)
-
-***
-Designers
-
-[Feiko van Dijk](https://github.com/henkiepenkie)
-[Marthijn van Deelen](https://github.com/24lightning)
+- [Marc Frencken](https://github.com/InnoCrator)
 
 ***
-Artists
+**Designers**
 
-[Daan Jansen](https://github.com/Danoontjen)
-[Daan van Leeuwen](https://github.com/superwortel)
-
-***
-Programmer
-
-[Jasper Drescher](https://github.com/JasperDre)
+- [Feiko van Dijk](https://github.com/henkiepenkie)
+- [Marthijn van Deelen](https://github.com/24lightning)
 
 ***
-Animator
+**Artists**
 
-[Harmjan Lever](https://github.com/harmjanfl)
+- [Daan Jansen](https://github.com/Danoontjen)
+- [Daan van Leeuwen](https://github.com/superwortel)
 
 ***
-Music
+**Programmer**
 
-[Tom Bouwmeister](https://github.com/Bouwmaster17)
+- [Jasper Drescher](https://github.com/JasperDre)
+
+***
+**Animator**
+
+- [Harmjan Lever](https://github.com/harmjanfl)
+
+***
+**Music**
+
+- [Tom Bouwmeister](https://github.com/Bouwmaster17)
 ***
 
 Project made by [CortexArts](https://github.com/cortexarts)
