@@ -65,5 +65,5 @@ Credits:
 
 ***
 
-This project is developed and maintained by [CortexArts](https://github.com/cortexarts) under the GNU GENERAL PUBLIC LICENSE Version 3.
+This project is developed by [CortexArts](https://github.com/cortexarts) under the GNU GENERAL PUBLIC LICENSE Version 3.
 Any contribution to this project is welcome and will be credited.
