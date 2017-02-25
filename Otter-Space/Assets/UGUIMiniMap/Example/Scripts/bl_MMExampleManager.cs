@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class bl_MMExampleManager : MonoBehaviour {
@@ -42,7 +43,7 @@ public class bl_MMExampleManager : MonoBehaviour {
     public void ChangeMap(int i)
     {
         PlayerPrefs.SetInt("MMExampleMapID",i);
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene(PlayerPrefs.GetInt("MMExampleMapID"));
     }
 
     public bl_MiniMap GetActiveMiniMap

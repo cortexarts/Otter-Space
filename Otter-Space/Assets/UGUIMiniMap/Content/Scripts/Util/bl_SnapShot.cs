@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 #if UNITY_EDITOR
 using UnityEditor;
@@ -29,13 +30,13 @@ public class bl_SnapShot : MonoBehaviour
 
     private string SnapshotName(int width, int height)
     {
-        string levelName = Application.loadedLevelName;
+        string levelName = SceneManager.GetActiveScene().name;
 
         //if in editor, we have to get the name through editor
 #if UNITY_EDITOR
         if (!Application.isPlaying)
         {
-            string[] path = EditorApplication.currentScene.Split(char.Parse("/"));
+            string[] path = SceneManager.GetActiveScene().name.Split(char.Parse("/"));
             string[] fileName = path[path.Length - 1].Split(char.Parse("."));
             levelName = fileName[0];
         }
