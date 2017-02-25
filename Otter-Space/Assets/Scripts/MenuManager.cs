@@ -16,7 +16,6 @@ public class MenuManager : MonoBehaviour
 
     AudioManager audioManager;
 
-    public GameObject audioListener;
     private bool muted = false;
 
     public GameObject credits;
@@ -77,14 +76,14 @@ public class MenuManager : MonoBehaviour
     public void ToggleMute() {
         if (muted)
         {
-            audioListener.SetActive(false);
+            AudioListener.volume = 0.0f;
             UnmutedBtn.SetActive(true);
             mutedBtn.SetActive(false);
             muted = false;
         }
         else
         {
-            audioListener.SetActive(true);
+            AudioListener.volume = 1.0f;
             mutedBtn.SetActive(true);
             UnmutedBtn.SetActive(false);
             muted = true;
@@ -117,6 +116,7 @@ public class MenuManager : MonoBehaviour
     public void ToggleOptions() {
         if (showOptions)
         {
+            AudioListener.volume = 0.0f;
             optionsMenu.SetActive(false);
             showOptions = false;
 			MobileSingleStickControl.SetActive (true);
@@ -127,6 +127,14 @@ public class MenuManager : MonoBehaviour
         }
         else
         {
+            if (muted)
+            {
+                AudioListener.volume = 1.0f;
+            }
+            else
+            {
+                AudioListener.volume = 0.0f;
+            }
             optionsMenu.SetActive(true);
             showOptions = true;
 			MobileSingleStickControl.SetActive (false);
