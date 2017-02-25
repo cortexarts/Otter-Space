@@ -16,6 +16,10 @@ public class FloatingPlayer2DController : MonoBehaviour
     void Start ()
 	{
 		myBody = this.GetComponent<Rigidbody2D>();
+        if (PlayerPrefs.GetString("landingBool") != "false" && PlayerPrefs.GetString("landingBool") != "true")
+        {
+            PlayerPrefs.SetString("landingBool", "false");
+        }
     }
 	
 	void FixedUpdate ()
@@ -42,11 +46,11 @@ public class FloatingPlayer2DController : MonoBehaviour
             {
                 if (isBoosting)
                 {
-                    GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount -= 0.8f * Time.fixedDeltaTime;
+                    GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount -= 1.0f * Time.fixedDeltaTime;
                 }
                 else
                 {
-                    GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount -= 0.4f * Time.fixedDeltaTime;
+                    GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount -= 0.8f * Time.fixedDeltaTime;
                 }
             }
         }
@@ -57,9 +61,9 @@ public class FloatingPlayer2DController : MonoBehaviour
 
         if (refueling && GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount < 100)
         {
-            GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount += 0.01f * Time.timeSinceLevelLoad;
+            GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount += 2.0f * Time.fixedDeltaTime;
         }
-	}
+    }
 
     void OnCollisionEnter2D(Collision2D coll)
     {
@@ -74,6 +78,15 @@ public class FloatingPlayer2DController : MonoBehaviour
         if (coll.gameObject.tag == "Ground")
         {
             refueling = false;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D coll)
+    {
+        if (coll.gameObject.tag == "Ground")
+        {
+            PlayerPrefs.SetString("landingBool", "true");
+            SceneManager.LoadScene("MainLevel");
         }
     }
 }

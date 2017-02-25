@@ -14,7 +14,11 @@ public class OnGlowEnter : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-	}
+        if (PlayerPrefs.GetString("landingBool") != "false" && PlayerPrefs.GetString("landingBool") != "true")
+        {
+            PlayerPrefs.SetString("landingBool", "false");
+        }
+    }
 
     // Update is called once per frame
     void Update () {
@@ -46,7 +50,7 @@ public class OnGlowEnter : MonoBehaviour {
             PopUp.SetActive(true);
             collided = true;
         }
-        else if (coll.gameObject.tag == "Planet")
+        else if (coll.gameObject.tag == "Planet" && PlayerPrefs.GetString("landingBool") == "false")
         {
             planetname = coll.gameObject.name;
 
