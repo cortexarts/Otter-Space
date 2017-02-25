@@ -22,8 +22,8 @@ public class LandingEnvSwitch : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        //Reading dictionary file
-        planetname = System.IO.File.ReadAllText("PlayerProgress.txt");
+        //Reading progress
+        planetname = PlayerPrefs.GetString("PlayerProgress", planetname);
 
         //Switching env
         if (planetname == "Moon")

@@ -22,7 +22,7 @@ public class newspawn : MonoBehaviour
     void Start () {
         if (PlayerPrefs.GetString("landingBool") == "true")
         {
-            planetname = System.IO.File.ReadAllText("PlayerProgress.txt");
+            planetname = PlayerPrefs.GetString("PlayerProgress", planetname);
             //Switching env
             if (planetname == "Moon")
             {

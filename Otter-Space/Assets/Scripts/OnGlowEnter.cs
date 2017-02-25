@@ -54,8 +54,9 @@ public class OnGlowEnter : MonoBehaviour {
         {
             planetname = coll.gameObject.name;
 
-            //Save to file
-            System.IO.File.WriteAllText("PlayerProgress.txt", planetname);
+            //Save progress
+            //System.IO.File.WriteAllText("PlayerProgress.txt", planetname);
+            PlayerPrefs.SetString("PlayerProgress", planetname);
 
             PlayerPrefs.SetFloat("fuelAmount", GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount);
 

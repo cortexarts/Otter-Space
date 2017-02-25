@@ -2368,6 +2368,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114827490266884064, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9,
+        type: 2}
+      propertyPath: sounds.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4406572640129784, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2399,6 +2404,36 @@ Prefab:
     - target: {fileID: 4406572640129784, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114827490266884064, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9,
+        type: 2}
+      propertyPath: sounds.Array.data[3].name
+      value: ButtonHover
+      objectReference: {fileID: 0}
+    - target: {fileID: 114827490266884064, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9,
+        type: 2}
+      propertyPath: sounds.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: bc013b2dd7e763741b2a15eaebf99f78, type: 3}
+    - target: {fileID: 114827490266884064, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9,
+        type: 2}
+      propertyPath: sounds.Array.data[3].volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114827490266884064, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9,
+        type: 2}
+      propertyPath: sounds.Array.data[3].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114827490266884064, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9,
+        type: 2}
+      propertyPath: sounds.Array.data[3].randomVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114827490266884064, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9,
+        type: 2}
+      propertyPath: sounds.Array.data[3].randomPitch
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cff7e83b9d7c0d241b1a0ec32d1e34c9, type: 2}
