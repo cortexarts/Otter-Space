@@ -30,7 +30,10 @@ public class FloatingPlayer2DController : MonoBehaviour
         }
 
         bool isBoosting = CrossPlatformInputManager.GetButton("Boost");
-		myBody.AddForce(moveVec * (isBoosting ? boostMultiplier : 1));
+        if (GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount > 0)
+        {
+            myBody.AddForce(moveVec * (isBoosting ? boostMultiplier : 1));
+        }
 
         if (moveVec.sqrMagnitude > 0.0f)
         {
@@ -39,11 +42,11 @@ public class FloatingPlayer2DController : MonoBehaviour
             {
                 if (isBoosting)
                 {
-                    GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount -= 0.005f * Time.timeSinceLevelLoad;
+                    GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount -= 0.8f * Time.fixedDeltaTime;
                 }
                 else
                 {
-                    GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount -= 0.001f * Time.timeSinceLevelLoad;
+                    GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount -= 0.4f * Time.fixedDeltaTime;
                 }
             }
         }
