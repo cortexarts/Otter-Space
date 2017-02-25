@@ -10,7 +10,7 @@ and find some decent wood on the go. You have a nose for trees nonetheless.
 
 - Download the app from [Google Play](https://play.google.com/store/apps/details?id=com.CortexArts.OtterSpace)
 
-- Get the latest release with the source code from [Github](https://github.com/cortexarts/Otter-Space/releases/tag/v0.1)
+- Get the latest release with the source code from [Github](https://github.com/cortexarts/Otter-Space/releases/)
 
 Mechanics:
 --------------------------------------
