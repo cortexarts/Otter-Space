@@ -1,10 +1,25 @@
-﻿using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using GooglePlayGames;
+using GooglePlayGames.BasicApi;
+using GooglePlayGames.BasicApi.Multiplayer;
+using GooglePlayGames.BasicApi.Quests;
+using GooglePlayGames.BasicApi.SavedGame;
+using GooglePlayGames.OurUtils;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms;
 
 public class MenuManager : MonoBehaviour
 {
+    //Google Play stuff
+    private static readonly PlayGamesClientConfiguration ClientConfiguration =
+     new PlayGamesClientConfiguration.Builder()
+         .EnableSavedGames()
+         .Build();
+
+    //End google play stuff
 
     public static MenuManager instance;
 
@@ -147,14 +162,13 @@ public class MenuManager : MonoBehaviour
 
     public void Authenticate()
     {
-        Social.localUser.Authenticate((bool success) => {
+        PlayGamesPlatform.InitializeInstance(ClientConfiguration);
+        PlayGamesPlatform.Activate();
+        PlayGamesPlatform.Instance.Authenticate((bool success) =>
+        {
             if (success)
             {
-                Debug.Log("LOGGED IN!");
-            }
-            else
-            {
-                Debug.Log("NOT LOGGED IN!");
+                Debug.Log("Login succesful!");
             }
         });
     }
