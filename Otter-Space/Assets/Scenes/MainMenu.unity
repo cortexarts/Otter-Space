@@ -925,6 +925,11 @@ Prefab:
       propertyPath: mutedBtn
       value: 
       objectReference: {fileID: 2048295597}
+    - target: {fileID: 114716225985842932, guid: 1551485df6677ab429a8a4977179b26a,
+        type: 2}
+      propertyPath: leaderboard
+      value: CgkIofG9zvYSEAIQBg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1551485df6677ab429a8a4977179b26a, type: 2}
   m_IsPrefabParent: 0

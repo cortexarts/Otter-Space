@@ -13,14 +13,6 @@ using UnityEngine.SocialPlatforms;
 
 public class MenuManager : MonoBehaviour
 {
-    //Google Play stuff
-    private static readonly PlayGamesClientConfiguration ClientConfiguration =
-     new PlayGamesClientConfiguration.Builder()
-         .EnableSavedGames()
-         .Build();
-
-    //End google play stuff
-
     public static MenuManager instance;
 
     [SerializeField]
@@ -125,7 +117,7 @@ public class MenuManager : MonoBehaviour
 
     public void ToggleHighScore()
     {
-        Social.ShowLeaderboardUI();
+        PlayGamesPlatform.Instance.ShowLeaderboardUI("CgkIofG9zvYSEAIQBg");
     }
 
     public void ToggleOptions() {
@@ -162,7 +154,6 @@ public class MenuManager : MonoBehaviour
 
     public void Authenticate()
     {
-        PlayGamesPlatform.InitializeInstance(ClientConfiguration);
         PlayGamesPlatform.Activate();
         PlayGamesPlatform.Instance.Authenticate((bool success) =>
         {
@@ -177,6 +168,7 @@ public class MenuManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            ((PlayGamesPlatform)Social.Active).SignOut();
             Application.Quit();
         }
     }

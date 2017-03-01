@@ -28,6 +28,7 @@ public static class GPGSIds
         public const string achievement_harvester = "CgkIofG9zvYSEAIQAg"; // <GPGSID>
         public const string achievement_welcome = "CgkIofG9zvYSEAIQAA"; // <GPGSID>
         public const string achievement_hero = "CgkIofG9zvYSEAIQAQ"; // <GPGSID>
+        public const string leaderboard_global = "CgkIofG9zvYSEAIQBg"; // <GPGSID>
         public const string achievement_safety_is_number_one_priority = "CgkIofG9zvYSEAIQBA"; // <GPGSID>
 
 }
