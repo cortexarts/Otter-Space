@@ -164,6 +164,11 @@ public class MenuManager : MonoBehaviour
         });
     }
 
+    public void SkipScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
