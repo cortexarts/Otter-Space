@@ -1055,6 +1055,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2621e584f0555f409cf2f6771bce52e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MiniMap: {fileID: 0}
+  origin: {x: 0, y: 0}
+  direction: {x: 0, y: 0}
+  smoothDirection: {x: 0, y: 0}
+  touched: 0
+  pointerID: 0
+  cursorIcon: {fileID: 0}
 --- !u!114 &114134767787574610
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1168,7 +1175,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b60da4642a8c785498401ca086e31683, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GizmoColor: {r: 0, g: 0.6689658, b: 1, a: 0.84313726}
+  GizmoColor:
+    r: 0
+    g: 0.6689658
+    b: 1
+    a: 0.84313726
 --- !u!114 &114204536689324016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1573,6 +1584,8 @@ MonoBehaviour:
   East: {fileID: 224196629662048574}
   West: {fileID: 224854833300520426}
   Grade: 0
+  Opposite: 0
+  t: {fileID: 0}
 --- !u!114 &114466269202231868
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1738,6 +1751,7 @@ MonoBehaviour:
   MiniMapBackGround: {fileID: 21300000, guid: 3f4fe9148e47a454591010723b866aea, type: 3}
   WorldMapBackGround: {fileID: 21300000, guid: 3f4fe9148e47a454591010723b866aea, type: 3}
   MaskIconRoot: {fileID: 224417552883447926}
+  _image: {fileID: 0}
 --- !u!114 &114602278379956350
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1889,7 +1903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Target: {fileID: 0}
-  LevelName: Example Level
+  LevelName: 4578616d706c65204c6576656c
   MiniMapLayer: 10
   ToogleKey: 101
   MMCamera: {fileID: 20668553924466072}
@@ -1920,6 +1934,9 @@ MonoBehaviour:
   FullMapPosition: {x: 0.000015258789, y: 0.0000042915344, z: 0}
   FullMapRotation: {x: -0, y: 0, z: 0}
   FullMapSize: {x: 525, y: 321}
+  MiniMapPosition: {x: 0, y: 0, z: 0}
+  MiniMapRotation: {x: 0, y: 0, z: 0}
+  MiniMapSize: {x: 0, y: 0}
   LerpTransition: 8
   GetWorldRect: 
   CanDragMiniMap: 1
@@ -1930,9 +1947,21 @@ MonoBehaviour:
   DragCursorIcon: {fileID: 2800000, guid: 1826d50b3cb9b914c899f276f4066858, type: 3}
   HotSpot: {x: 15, y: 15}
   MapTexture: {fileID: 2800000, guid: 16412ccaf0b36234087e0bd79e865e85, type: 3}
-  TintColor: {r: 0.9485294, g: 0.9485294, b: 0.9485294, a: 1}
-  SpecularColor: {r: 0.44852942, g: 0.44852942, b: 0.44852942, a: 1}
-  EmessiveColor: {r: 1, g: 1, b: 1, a: 0.99215686}
+  TintColor:
+    r: 0.9485294
+    g: 0.9485294
+    b: 0.9485294
+    a: 1
+  SpecularColor:
+    r: 0.44852942
+    g: 0.44852942
+    b: 0.44852942
+    a: 1
+  EmessiveColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 0.99215686
   EmissionAmount: 1
   ReferenceMat: {fileID: 2100000, guid: 25d829ed010696c4a900076f15ccf89f, type: 2}
   MapPlane: {fileID: 180442, guid: 2b89573881c76454f868fcad24ba048b, type: 2}
@@ -1942,6 +1971,15 @@ MonoBehaviour:
   PlayerIcon: {fileID: 114334164999669864}
   ItemPrefabSimple: {fileID: 145086, guid: a6f8b5898d259114fa6c3d8ed7a2938c, type: 2}
   ItemPrefab: {fileID: 197840, guid: 2b4fb31f6472842468de0a7249d7b8da, type: 2}
+  DragOffset: {x: 0, y: 0, z: 0}
+  DefaultRotationMode: 0
+  DeafultMapRot: {x: 0, y: 0, z: 0}
+  DefaultRotationCircle: 0
+  plane: {fileID: 0}
+  defaultYCameraPosition: 0
+  getDelayPositionCamera: 0
+  t: {fileID: 0}
+  _maskHelper: {fileID: 0}
 --- !u!114 &114680072196526250
 MonoBehaviour:
   m_ObjectHideFlags: 1
