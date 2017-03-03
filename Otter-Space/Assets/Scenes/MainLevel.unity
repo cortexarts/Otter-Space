@@ -2534,6 +2534,21 @@ Prefab:
       propertyPath: m_Name
       value: RotateJoystick
       objectReference: {fileID: 0}
+    - target: {fileID: 114711045660590964, guid: d8dee2d124137784a8fb915ad40711e2,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114158465896545612, guid: d8dee2d124137784a8fb915ad40711e2,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114309119064882932, guid: d8dee2d124137784a8fb915ad40711e2,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d8dee2d124137784a8fb915ad40711e2, type: 2}
   m_IsPrefabParent: 0
@@ -2672,11 +2687,11 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 56400a573603a7745b6cfc2b0cecdc89, type: 3}
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2684,8 +2699,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You are approaching the moon! Maybe you will be the first to sea the otter
-    side of the moon. Make sure to land safely and gather as many resources as possible.
+  m_Text: Lorem ipsum is cool and stuff, but what if you're too lazy to get one. Then
+    you just make some random sentences yourself to check if you work actually does
+    work.
 --- !u!222 &780461733
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6008,6 +6024,7 @@ GameObject:
   - component: {fileID: 1941123724}
   - component: {fileID: 1941123726}
   - component: {fileID: 1941123725}
+  - component: {fileID: 1941123727}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -6032,8 +6049,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 100}
+  m_AnchoredPosition: {x: 0, y: 5}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1941123725
 MonoBehaviour:
@@ -6048,15 +6065,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.9607843}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: f2faea5ec23942a4f9169fb66d43650c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6070,6 +6087,18 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1941123723}
+--- !u!114 &1941123727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1941123723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7f9abc700f12474ba5a69f170890af6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 780461732}
 --- !u!1 &1947827773
 GameObject:
   m_ObjectHideFlags: 0
