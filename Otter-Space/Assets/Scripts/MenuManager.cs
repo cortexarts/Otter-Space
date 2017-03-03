@@ -31,11 +31,7 @@ public class MenuManager : MonoBehaviour
     public GameObject optionsMenu;
     private bool showOptions = false;
 
-	public GameObject MobileSingleStickControl;
-	private bool showControl = true;
-
 	public GameObject pauseButton;
-	private bool showPause = true;
 
     public GameObject mutedBtn;
     public GameObject UnmutedBtn;
@@ -112,25 +108,24 @@ public class MenuManager : MonoBehaviour
 
     public void ShowRate()
     {
+        Debug.Log("Showing app page!");
         Application.OpenURL("market://details?id=com.CortexArts.OtterSpace");
     }
 
     public void ToggleHighScore()
     {
+        Debug.Log("Showing highscore!");
         PlayGamesPlatform.Instance.ShowLeaderboardUI("CgkIofG9zvYSEAIQBg");
     }
 
     public void ToggleOptions() {
         if (showOptions)
         {
-            AudioListener.volume = 0.0f;
+            AudioListener.volume = 1.0f;
             optionsMenu.SetActive(false);
-            showOptions = false;
-			MobileSingleStickControl.SetActive (true);
-			showControl = true;
-			pauseButton.SetActive (true);
-			showPause = true;
+			pauseButton.SetActive(true);
 			Time.timeScale = 1;
+            showOptions = false;
         }
         else
         {
@@ -143,12 +138,9 @@ public class MenuManager : MonoBehaviour
                 AudioListener.volume = 0.0f;
             }
             optionsMenu.SetActive(true);
-            showOptions = true;
-			MobileSingleStickControl.SetActive (false);
-			showControl = false;
-			pauseButton.SetActive (false);
-			showPause = false;
+			pauseButton.SetActive(false);
 			Time.timeScale = 0;
+            showOptions = true;
         }
     }
 
@@ -160,6 +152,10 @@ public class MenuManager : MonoBehaviour
             if (success)
             {
                 Debug.Log("Login succesful!");
+            }
+            else
+            {
+                Debug.Log("Login failed!");
             }
         });
     }
@@ -173,6 +169,7 @@ public class MenuManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Debug.Log("Quit game!");
             ((PlayGamesPlatform)Social.Active).SignOut();
             Application.Quit();
         }
