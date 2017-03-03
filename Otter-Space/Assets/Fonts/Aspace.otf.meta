@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: d67816993eb70524ea2081849d6f8356
-timeCreated: 1480975617
+guid: 9a20b9636c0e30641bea2f18956858a0
+timeCreated: 1488550472
 licenseType: Free
 TrueTypeFontImporter:
   serializedVersion: 4
@@ -9,8 +9,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
+  fontName: a?space
   fontNames:
-  - Gtek Technology
+  - a?space
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
