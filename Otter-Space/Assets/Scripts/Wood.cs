@@ -2,24 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Wood : MonoBehaviour {
+public class Wood : MonoBehaviour
+{
+    public float woodAmount;
+    public Transform loadingBar;
 
-    public Text txt;
-    public int woodAmount;
-
-    // Use this for initialization
     void Start()
     {
-        txt = gameObject.GetComponent<Text>();
-        txt.text = woodAmount.ToString();
+        if (SceneManager.GetActiveScene().name == "MainLevel")
+        {
+            PlayerPrefs.SetFloat("woodAmount", woodAmount);
+        }
+        else if (SceneManager.GetActiveScene().name == "Landing")
+        {
+            woodAmount = PlayerPrefs.GetFloat("woodAmount");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        txt.text = woodAmount.ToString();
-        woodAmount = PlayerPrefs.GetInt("woodAmount");
-        PlayerPrefs.SetInt("woodAmount", woodAmount);
+        loadingBar.GetComponent<Image>().fillAmount = woodAmount / 100;
     }
 }

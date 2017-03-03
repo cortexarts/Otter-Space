@@ -1182,7 +1182,7 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7e23b92cbbcf9e241a6d66fc37dd4565, type: 2}
+  - {fileID: 2100000, guid: 622f3d192bf7a4d42a7a038088480c59, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1842,16 +1842,15 @@ RectTransform:
 --- !u!114 &615618147
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114677160416636752, guid: 77debd76dfe10ee449f950308b3328bc,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 615618145}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4528fbbe21f19244eb9cdee641760f88, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ade2c114de72334b87104b7e4f713fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fuelAmount: 100
+  metalAmount: 0
   loadingBar: {fileID: 615618146}
 --- !u!114 &615618148
 MonoBehaviour:
@@ -2304,7 +2303,7 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7e23b92cbbcf9e241a6d66fc37dd4565, type: 2}
+  - {fileID: 2100000, guid: 622f3d192bf7a4d42a7a038088480c59, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2978,7 +2977,7 @@ RectTransform:
   m_GameObject: {fileID: 934961021}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 0.6, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1121907212}
   m_RootOrder: 1
@@ -3083,7 +3082,7 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7e23b92cbbcf9e241a6d66fc37dd4565, type: 2}
+  - {fileID: 2100000, guid: 622f3d192bf7a4d42a7a038088480c59, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3481,16 +3480,15 @@ RectTransform:
 --- !u!114 &1121907213
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114677160416636752, guid: 77debd76dfe10ee449f950308b3328bc,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1121907211}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4528fbbe21f19244eb9cdee641760f88, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b5317f9ecdba79459f4733c0b2c541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fuelAmount: 100
+  woodAmount: 0
   loadingBar: {fileID: 1121907212}
 --- !u!114 &1121907214
 MonoBehaviour:
@@ -4538,6 +4536,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23077408356273944, guid: 0d8115ffd88030c48bd163d36fcf45e4,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 622f3d192bf7a4d42a7a038088480c59, type: 2}
     m_RemovedComponents:
     - {fileID: 114928007214464442, guid: 0d8115ffd88030c48bd163d36fcf45e4, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0d8115ffd88030c48bd163d36fcf45e4, type: 2}

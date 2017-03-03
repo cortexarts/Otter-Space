@@ -20,13 +20,15 @@ public class CollectingResources : MonoBehaviour {
             {
                 Trees[i].SetActive(false);
                 Trees.RemoveAt(i);
-                PlayerPrefs.SetInt("woodAmount", GameObject.Find("WoodText").GetComponent<Wood>().woodAmount + 1);
+                PlayerPrefs.SetFloat("woodAmount", GameObject.Find("WoodCont").GetComponent<Wood>().woodAmount + 1.0f);
+                GameObject.Find("WoodCont").GetComponent<Wood>().woodAmount += 1.0f;
             }
             for (int i = 0; i < Metal.Count; i++)
             {
                 Metal[i].SetActive(false);
                 Metal.RemoveAt(i);
-                PlayerPrefs.SetInt("metalAmount", GameObject.Find("MetalText").GetComponent<Metal>().metalAmount + 1);
+                PlayerPrefs.SetFloat("metalAmount", GameObject.Find("MetalCont").GetComponent<Metal>().metalAmount + 1.0f);
+                GameObject.Find("MetalCont").GetComponent<Metal>().metalAmount += 1.0f;
             }
         }
 	}

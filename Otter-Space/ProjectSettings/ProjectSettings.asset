@@ -120,13 +120,13 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleIdentifier: com.CortexArts.OtterSpace
-  bundleVersion: 0.2
+  bundleVersion: 0.3
   preloadedAssets: []
   metroInputSource: 0
   m_HolographicPauseOnTrackingLoss: 1
   xboxOneDisableKinectGpuReservation: 0
   protectGraphicsMemory: 0
-  AndroidBundleVersionCode: 6
+  AndroidBundleVersionCode: 7
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
   aotOptions: 
