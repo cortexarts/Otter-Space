@@ -9,12 +9,15 @@ public class OnGlowEnter : MonoBehaviour {
     private string planetname;
     public bool entered = false;
     private bool leaving = false;
+    public bool leavingEarth = false;
     public Transform enteredPlanet;
     public GameObject PopUp;
+    Rigidbody2D myBody;
 
     // Use this for initialization
     void Start ()
     {
+        myBody = this.GetComponent<Rigidbody2D>();
         if (PlayerPrefs.GetString("landingBool") != "false" && PlayerPrefs.GetString("landingBool") != "true")
         {
             PlayerPrefs.SetString("landingBool", "false");
@@ -72,6 +75,11 @@ public class OnGlowEnter : MonoBehaviour {
         {
             PopUp.SetActive(false);
             leaving = true;
+        }
+        else if (coll.gameObject.name == "SoundTrigger")
+        {
+            leavingEarth = true;
+            myBody.gravityScale = 0;
         }
     }
 }

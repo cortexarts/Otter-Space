@@ -26,14 +26,14 @@ public class FloatingPlayer2DController : MonoBehaviour
     {
         Vector3 lookVec = new Vector3(CrossPlatformInputManager.GetAxis("Horizontal_2"), CrossPlatformInputManager.GetAxis("Vertical_2"), 4096);
 
-        if (lookVec.x != 0 && lookVec.y != 0)
-        {
-            Quaternion inputRotation = Quaternion.LookRotation(lookVec, Vector3.back);
-            transform.rotation = Quaternion.Lerp(transform.rotation, inputRotation, rotationDamping);
-        }
-
         if (CrossPlatformInputManager.GetAxis("Vertical") > 0 && GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount > 0)
         {
+            if (lookVec.x != 0 && lookVec.y != 0)
+            {
+                Quaternion inputRotation = Quaternion.LookRotation(lookVec, Vector3.back);
+                transform.rotation = Quaternion.Lerp(transform.rotation, inputRotation, rotationDamping);
+            }
+
             fireanimation.SetActive(true);
 
             if (this.GetComponent<OnGlowEnter>().entered)
