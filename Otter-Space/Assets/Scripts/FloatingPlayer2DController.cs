@@ -5,7 +5,8 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class FloatingPlayer2DController : MonoBehaviour
 {
-    public float moveForce = 0.5f;
+    public float moveForce = 0;
+    public float maxMoveForce = 10;
     public float rotationDamping = 0.01f;
     public bool refueling = false;
     Rigidbody2D myBody;
@@ -23,7 +24,6 @@ public class FloatingPlayer2DController : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 moveVec = new Vector2(CrossPlatformInputManager.GetAxis("Horizontal"), CrossPlatformInputManager.GetAxis("Vertical")) * moveForce;
         Vector3 lookVec = new Vector3(CrossPlatformInputManager.GetAxis("Horizontal_2"), CrossPlatformInputManager.GetAxis("Vertical_2"), 4096);
 
         if (lookVec.x != 0 && lookVec.y != 0)
@@ -32,14 +32,16 @@ public class FloatingPlayer2DController : MonoBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, inputRotation, rotationDamping);
         }
 
-        if (GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount > 0)
-        {
-            myBody.AddForce(moveVec);
-        }
-
-        if (moveVec.sqrMagnitude > 0.0f)
+        if (CrossPlatformInputManager.GetAxis("Vertical") > 0 && GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount > 0)
         {
             fireanimation.SetActive(true);
+
+            myBody.AddForce(((CrossPlatformInputManager.GetAxis("Vertical") + 1) / 2) * moveForce * transform.up);
+            if (moveForce < maxMoveForce)
+            {
+                moveForce += 1 * Time.fixedDeltaTime;
+            }
+
             if (GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount > 0)
             {
                     GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount -= 0.8f * Time.fixedDeltaTime;
