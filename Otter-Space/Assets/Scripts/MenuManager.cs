@@ -169,9 +169,16 @@ public class MenuManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("Quit game!");
-            ((PlayGamesPlatform)Social.Active).SignOut();
-            Application.Quit();
+            if (SceneManager.GetActiveScene().name == "MainMenu")
+            {
+                Debug.Log("Quit game!");
+                ((PlayGamesPlatform)Social.Active).SignOut();
+                Application.Quit();
+            }
+            else
+            {
+                ToggleOptions();
+            }
         }
     }
 }
