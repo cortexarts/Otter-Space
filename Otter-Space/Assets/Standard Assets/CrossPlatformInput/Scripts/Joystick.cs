@@ -95,8 +95,8 @@ namespace UnityStandardAssets.CrossPlatformInput
 
 		public void OnPointerUp(PointerEventData data)
 		{
-			transform.position = m_StartPos;
-			UpdateVirtualAxes(m_StartPos);
+			//transform.position = m_StartPos;
+			//UpdateVirtualAxes(m_StartPos);
 		}
 
 
