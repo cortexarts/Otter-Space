@@ -18,6 +18,10 @@ public class DialogueHandler : MonoBehaviour
         {
             dialogue.text = "You are approaching Mars! Make sure to land safely and gather as many resources as possible.";
         }
+        else
+        {
+            dialogue.text = "You are approaching a planet where there isn't an actual dialogue. :/";
+        }
     }
 
     // Update is called once per frame
