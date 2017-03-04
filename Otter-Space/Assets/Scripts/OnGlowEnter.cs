@@ -7,8 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class OnGlowEnter : MonoBehaviour {
     private string planetname;
-    private bool collided = false;
+    public bool entered = false;
     private bool leaving = false;
+    public Transform enteredPlanet;
     public GameObject PopUp;
 
     // Use this for initialization
@@ -22,13 +23,13 @@ public class OnGlowEnter : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (collided)
+        if (entered)
         {
             Camera.main.orthographicSize += 8.0f * Time.deltaTime;
 
             if (Camera.main.orthographicSize > 49)
             {
-                collided = false;
+                entered = false;
             }
         }
 
@@ -48,7 +49,8 @@ public class OnGlowEnter : MonoBehaviour {
         if (coll.gameObject.tag == "Glow")
         {
             PopUp.SetActive(true);
-            collided = true;
+            entered = true;
+            enteredPlanet = coll.gameObject.transform;
         }
         else if (coll.gameObject.tag == "Planet" && PlayerPrefs.GetString("landingBool") == "false")
         {

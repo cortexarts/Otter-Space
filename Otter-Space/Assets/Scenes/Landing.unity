@@ -2397,7 +2397,7 @@ Prefab:
     - target: {fileID: 50654841246839940, guid: 1a53271d5c860ff4e940d0bb53d88554,
         type: 2}
       propertyPath: m_GravityScale
-      value: 0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4188497294087458, guid: 1a53271d5c860ff4e940d0bb53d88554, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -2408,6 +2408,11 @@ Prefab:
       propertyPath: spawnpoint
       value: 
       objectReference: {fileID: 1107109662}
+    - target: {fileID: 114653339017509340, guid: 1a53271d5c860ff4e940d0bb53d88554,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a53271d5c860ff4e940d0bb53d88554, type: 2}
   m_IsPrefabParent: 0
