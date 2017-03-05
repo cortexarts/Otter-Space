@@ -21,6 +21,11 @@ public class FloatingPlayer2DController : MonoBehaviour
         {
             PlayerPrefs.SetString("landingBool", "false");
         }
+        if (PlayerPrefs.GetString("landingBool") == "true")
+        {
+            CrossPlatformInputManager.SetAxis("Vertical", 0.5f);
+            moveForce = 5.0f;
+        }
     }
 
     void FixedUpdate()
