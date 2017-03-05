@@ -37,14 +37,7 @@ public class FloatingPlayer2DController : MonoBehaviour
 
             fireanimation.SetActive(true);
 
-            if (this.GetComponent<OnGlowEnter>().entered)
-            {
-                transform.position = Vector3.MoveTowards(transform.position, this.GetComponent<OnGlowEnter>().enteredPlanet.transform.position, (moveForce / 2) * Time.deltaTime);
-            }
-            else
-            {
-                myBody.AddForce(((CrossPlatformInputManager.GetAxis("Vertical") + 1) / 2) * moveForce * transform.up);
-            }
+            myBody.AddForce(((CrossPlatformInputManager.GetAxis("Vertical") + 1) / 2) * moveForce * transform.up);
 
             if (moveForce < maxMoveForce)
             {
@@ -59,6 +52,11 @@ public class FloatingPlayer2DController : MonoBehaviour
         else
         {
             fireanimation.SetActive(false);
+        }
+
+        if (this.GetComponent<OnGlowEnter>().entered)
+        {
+            myBody.AddForce((this.GetComponent<OnGlowEnter>().enteredPlanet.transform.position - transform.position).normalized * (moveForce / 4));
         }
 
         if (refueling && GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount < 100)

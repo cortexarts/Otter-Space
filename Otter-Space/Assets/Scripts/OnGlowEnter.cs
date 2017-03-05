@@ -28,11 +28,13 @@ public class OnGlowEnter : MonoBehaviour {
     void Update () {
         if (entered)
         {
-            Camera.main.orthographicSize += 8.0f * Time.deltaTime;
-
             if (Camera.main.orthographicSize > 49)
             {
-                entered = false;
+                Camera.main.orthographicSize = 49;
+            }
+            else
+            {
+                Camera.main.orthographicSize += 8.0f * Time.deltaTime;
             }
         }
 
@@ -63,6 +65,7 @@ public class OnGlowEnter : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Planet" && PlayerPrefs.GetString("landingBool") == "false")
         {
+            entered = false;
             planetname = coll.gameObject.name;
             PlayerPrefs.SetFloat("fuelAmount", GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount);
 
