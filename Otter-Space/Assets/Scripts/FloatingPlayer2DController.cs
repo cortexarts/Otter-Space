@@ -12,6 +12,7 @@ public class FloatingPlayer2DController : MonoBehaviour
     Rigidbody2D myBody;
 
     public GameObject fireanimation;
+    public GameObject explosionanimation;
 
     void Start()
     {
@@ -78,7 +79,19 @@ public class FloatingPlayer2DController : MonoBehaviour
     {
         if (coll.gameObject.tag == "Ground")
         {
-            refueling = true;
+            if (CrossPlatformInputManager.GetAxis("Vertical") > 0.4)
+            {
+                //Play explosion
+                GameObject explosion = (GameObject)Instantiate(explosionanimation);
+                explosion.transform.position = transform.position;
+
+                //Destroy this gameobject after explosion
+                Destroy(gameObject);
+            }
+            else
+            {
+                refueling = true;
+            }
         }
     }
 

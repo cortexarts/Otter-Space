@@ -44,7 +44,7 @@ namespace GAF.Objects
 		public override void reload()
 		{
 #if UNITY_5
-			cachedRenderer.useLightProbes = false;
+			//cachedRenderer.useLightProbes = false;
 			cachedRenderer.reflectionProbeUsage = UnityEngine.Rendering.ReflectionProbeUsage.Off;
 			cachedRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
 #else

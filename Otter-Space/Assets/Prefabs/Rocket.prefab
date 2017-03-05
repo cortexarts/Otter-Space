@@ -250,6 +250,8 @@ MonoBehaviour:
   rotationDamping: 0.01
   refueling: 0
   fireanimation: {fileID: 1200633469957508}
+  explosionanimation: {fileID: 1040494999412162, guid: 52ba910d50612bd4ab511fcc32b63377,
+    type: 2}
 --- !u!114 &114563920384257022
 MonoBehaviour:
   m_ObjectHideFlags: 1

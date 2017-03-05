@@ -7,9 +7,8 @@ public class CollectingResources : MonoBehaviour {
     public List<GameObject> Metal;
 
     // Use this for initialization
-    void Start () {
-       //PlayerPrefs.SetInt("woodAmount", 0);
-       //PlayerPrefs.SetInt("metalAmount", 0);
+    void Start ()
+    {
     }
 	
 	// Update is called once per frame

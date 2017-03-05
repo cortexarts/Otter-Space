@@ -11,7 +11,14 @@ public class Fuel : MonoBehaviour
 
     void Start()
     {
-        fuelAmount = PlayerPrefs.GetFloat("fuelAmount");
+        if (SceneManager.GetActiveScene().name == "MainLevel" && fuelAmount == 100)
+        {
+            PlayerPrefs.SetFloat("fuelAmount", fuelAmount);
+        }
+        else
+        {
+            fuelAmount = PlayerPrefs.GetFloat("fuelAmount");
+        }
     }
 
     // Update is called once per frame

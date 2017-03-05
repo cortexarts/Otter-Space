@@ -1694,11 +1694,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 114563920384257022, guid: 1a53271d5c860ff4e940d0bb53d88554,
-        type: 2}
-      propertyPath: PopUp
-      value: 
-      objectReference: {fileID: 1941123723}
     - target: {fileID: 114999643716840966, guid: 1a53271d5c860ff4e940d0bb53d88554,
         type: 2}
       propertyPath: moonspawn
@@ -1754,6 +1749,11 @@ Prefab:
       propertyPath: sunpsawn
       value: 
       objectReference: {fileID: 1508065086}
+    - target: {fileID: 114563920384257022, guid: 1a53271d5c860ff4e940d0bb53d88554,
+        type: 2}
+      propertyPath: PopUp
+      value: 
+      objectReference: {fileID: 1941123723}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a53271d5c860ff4e940d0bb53d88554, type: 2}
   m_IsPrefabParent: 0

@@ -121,7 +121,14 @@ public class MenuManager : MonoBehaviour
     public void TogglePause() {
         if (showPause)
         {
-            AudioListener.volume = 1.0f;
+            if (muted)
+            {
+                AudioListener.volume = 1.0f;
+            }
+            else
+            {
+                AudioListener.volume = 0.0f;
+            }
             pauseMenu.SetActive(false);
 			pauseButton.SetActive(true);
 			Time.timeScale = 1;
