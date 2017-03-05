@@ -49,25 +49,26 @@ public class OnGlowEnter : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == "Glow")
+        if (coll.gameObject.tag == "Planet" && PlayerPrefs.GetString("landingBool") == "false")
         {
             PopUp.SetActive(true);
             entered = true;
             enteredPlanet = coll.gameObject.transform;
+            planetname = coll.gameObject.name;
+            PlayerPrefs.SetString("PlayerProgress", planetname);
         }
-        else if (coll.gameObject.tag == "Planet" && PlayerPrefs.GetString("landingBool") == "false")
+     }
+
+    private void OnCollisionEnter2D(Collision2D coll)
+    {
+        if (coll.gameObject.tag == "Planet" && PlayerPrefs.GetString("landingBool") == "false")
         {
             planetname = coll.gameObject.name;
-
-            //Save progress
-            //System.IO.File.WriteAllText("PlayerProgress.txt", planetname);
-            PlayerPrefs.SetString("PlayerProgress", planetname);
-
             PlayerPrefs.SetFloat("fuelAmount", GameObject.Find("FuelCont").GetComponent<Fuel>().fuelAmount);
 
             SceneManager.LoadScene("Landing");
         }
-     }
+    }
 
     void OnTriggerExit2D(Collider2D coll)
     {

@@ -9,7 +9,12 @@ public class DialogueHandler : MonoBehaviour
 
     void Start()
     {
-        planetname = PlayerPrefs.GetString("PlayerProgress");
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        planetname = PlayerPrefs.GetString("PlayerProgress", planetname);
         if (planetname == "Moon")
         {
             dialogue.text = "You are approaching the Moon! Maybe you will be the first to sea the otter side of the moon. Make sure to land safely and gather as many resources as possible.";
@@ -22,11 +27,5 @@ public class DialogueHandler : MonoBehaviour
         {
             dialogue.text = "You are approaching a planet where there isn't an actual dialogue. :/";
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
