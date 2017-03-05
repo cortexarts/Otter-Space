@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f0b625614a406468ee087f147489e7, type: 3}
+  m_Name: '[monster_glow]68ff5a4049e2b344a92a1138a10c5d03_1_1'
+  m_EditorClassIdentifier: 
+  m_Asset: {fileID: 11400000, guid: 68ff5a4049e2b344a92a1138a10c5d03, type: 2}
+  m_Scale: 1
+  m_CSF: 1
+  m_CurrentDataPath: 4173736574732f4741462f4578616d706c65732f536f75726365732f4d6f6e73746572732f
+  m_Data:
+  - m_SearchName: 4d6f6e7374657273
+    m_SharedTexture: {fileID: 2800000, guid: 20cf1c618c3c3c14b98fb3cda0e230e0, type: 3}
+    m_SharedMaterial: {fileID: 2100000, guid: 31f539b61be15fd48b86b5a63b6bef12, type: 2}

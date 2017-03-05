@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1255569871, guid: fdbcbd4d83053e84092a28601744c6a0, type: 3}
+  m_Name: GAFConverter
+  m_EditorClassIdentifier: 
+  m_ConverterSettings:
+    m_CheckForUpdates: 1
+    m_TexturesPOT: 0
+    m_ForceSquared: 0
+    m_CompressGAF: 1
+    m_UseActionAfterConversion: 0
+    m_ActionAfterConversionMovieClip: 1
+    m_ActionAfterConversionNotBaked: 1
+    m_ActionAfterConversion: 24
+    m_AutoConverting: 0
+    m_MaxTextureSize: {x: 4096, y: 4096}
+    m_UseAdvancedInterface: 0
+    m_Scales:
+    - 1
+    m_ScalesNames:
+    - 
+    m_CSFs:
+    - 1
+    m_CSFsNames:
+    - 
+    m_AnimationFolder: 
+    m_DontShowWindowOnImport: 0
+    m_DontShowOnUpload: 0
+    m_DontShowOnUploadTemp: 0
+    m_DontShowOnReportIssue: 0
+    m_SaveAsZip: 0
+    m_SaveAsZipTo: 
+    m_MainTimeline: 1
+    m_Library: 0
+    m_ConversionMode: plain
+    m_LimitMaxBakeScaleOn: 0
+    m_LimitMaxBakeScale: 1
+    m_OriginalCSF: 1
+    m_OriginalScale: 1
+    m_TextureAtlasCompression: 0
+    m_SkipDynamicFilters: 0
+    m_SkipDynamicMasks: 0
+    m_CurrentLicense:
+      m_Type: 0
+      m_SettingsTable: 0100000000000000000000000000000001000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000000000000200000002000000020000000000000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000000000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000000000000
+      m_SettingsCount: 17
+    m_Licenses:
+    - preview_mode
+    - free
+    - studio
+    - enterprise
+    m_ExtractSounds: 0
+    m_AtlasRegionRotation: 0
+    m_CustomImagesSprite: 0
+    m_CustomImagesBitmap: 0
+    m_UnitySpecialFoldout: 1
+    m_TextureAtlasFoldout: 1
+    m_GeneralFoldout: 1
+    m_ConversionFoldout: 1
+    m_DebugAndOptimizationFoldout: 1
