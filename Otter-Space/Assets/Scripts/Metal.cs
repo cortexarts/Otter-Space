@@ -11,19 +11,17 @@ public class Metal : MonoBehaviour
 
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "MainLevel")
-        {
-            PlayerPrefs.SetFloat("metalAmount", metalAmount);
-        }
-        else if (SceneManager.GetActiveScene().name == "Landing")
-        {
-            metalAmount = PlayerPrefs.GetFloat("metalAmount");
-        }
+        metalAmount = PlayerPrefs.GetFloat("metalAmount");
     }
 
     // Update is called once per frame
     void Update()
     {
         loadingBar.GetComponent<Image>().fillAmount = metalAmount / 100;
+    }
+
+    private void OnDestroy()
+    {
+        PlayerPrefs.SetFloat("metalAmount", metalAmount);
     }
 }

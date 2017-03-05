@@ -11,19 +11,17 @@ public class Fuel : MonoBehaviour
 
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "MainLevel")
-        {
-            PlayerPrefs.SetFloat("fuelAmount", fuelAmount);
-        }
-        else if (SceneManager.GetActiveScene().name == "Landing")
-        {
-            fuelAmount = PlayerPrefs.GetFloat("fuelAmount");
-        }
+        fuelAmount = PlayerPrefs.GetFloat("fuelAmount");
     }
 
     // Update is called once per frame
     void Update()
     {
         loadingBar.GetComponent<Image>().fillAmount = fuelAmount / 100;
+    }
+
+    private void OnDestroy()
+    {
+        PlayerPrefs.SetFloat("fuelAmount", fuelAmount);
     }
 }

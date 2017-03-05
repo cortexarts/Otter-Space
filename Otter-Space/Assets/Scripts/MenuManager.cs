@@ -28,8 +28,8 @@ public class MenuManager : MonoBehaviour
     public GameObject credits;
     private bool showCredits = false;
 
-    public GameObject optionsMenu;
-    private bool showOptions = false;
+    public GameObject pauseMenu;
+    private bool showPause = false;
 
 	public GameObject pauseButton;
 
@@ -118,14 +118,14 @@ public class MenuManager : MonoBehaviour
         PlayGamesPlatform.Instance.ShowLeaderboardUI("CgkIofG9zvYSEAIQBg");
     }
 
-    public void ToggleOptions() {
-        if (showOptions)
+    public void TogglePause() {
+        if (showPause)
         {
             AudioListener.volume = 1.0f;
-            optionsMenu.SetActive(false);
+            pauseMenu.SetActive(false);
 			pauseButton.SetActive(true);
 			Time.timeScale = 1;
-            showOptions = false;
+            showPause = false;
         }
         else
         {
@@ -137,10 +137,10 @@ public class MenuManager : MonoBehaviour
             {
                 AudioListener.volume = 0.0f;
             }
-            optionsMenu.SetActive(true);
+            pauseMenu.SetActive(true);
 			pauseButton.SetActive(false);
 			Time.timeScale = 0;
-            showOptions = true;
+            showPause = true;
         }
     }
 
@@ -177,7 +177,7 @@ public class MenuManager : MonoBehaviour
             }
             else
             {
-                ToggleOptions();
+                TogglePause();
             }
         }
     }
