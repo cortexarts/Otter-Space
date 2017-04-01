@@ -36,6 +36,9 @@ public class MenuManager : MonoBehaviour
     public GameObject mutedBtn;
     public GameObject UnmutedBtn;
 
+    public GameObject UpgradeUI;
+    bool upgradeEnabled = false;
+
     void Start()
     {
         audioManager = AudioManager.instance;
@@ -170,6 +173,20 @@ public class MenuManager : MonoBehaviour
     public void SkipScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void ToggleUpgradeUI()
+    {
+        if (upgradeEnabled)
+        {
+            UpgradeUI.SetActive(true);
+            upgradeEnabled = false;
+        }
+        else
+        {
+            UpgradeUI.SetActive(false);
+            upgradeEnabled = true;
+        }
     }
 
     void Update()

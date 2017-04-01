@@ -453,6 +453,41 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &144438478 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1467223430494776, guid: 77debd76dfe10ee449f950308b3328bc,
+    type: 2}
+  m_PrefabInternal: {fileID: 837480274}
+--- !u!114 &144438480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 144438478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 438499221}
+          m_MethodName: ToggleUpgradeUI
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &213174993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,6 +1187,41 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 3.4
+--- !u!1 &370348565 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1483339823105972, guid: 77debd76dfe10ee449f950308b3328bc,
+    type: 2}
+  m_PrefabInternal: {fileID: 837480274}
+--- !u!114 &370348567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 370348565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 438499221}
+          m_MethodName: ToggleUpgradeUI
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &370423201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1352,6 +1422,41 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a22f9217c67943e4a8ed67ec5cd13953, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &374091694 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1745554878380270, guid: 77debd76dfe10ee449f950308b3328bc,
+    type: 2}
+  m_PrefabInternal: {fileID: 837480274}
+--- !u!114 &374091696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 374091694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 438499221}
+          m_MethodName: ToggleUpgradeUI
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &381134934
 GameObject:
   m_ObjectHideFlags: 0
@@ -2595,6 +2700,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 681202202}
+          m_MethodName: OnSelectFuel
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
 --- !u!114 &676816551
 MonoBehaviour:
@@ -2744,6 +2866,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UITitle: {fileID: 674689455}
   UIDescription: {fileID: 1384480609}
+  rocket1: {fileID: 598181734}
+  rocket2: {fileID: 1458984089}
+  rocket3: {fileID: 748758849}
+  rocket4: {fileID: 685524481}
+--- !u!1 &685524481 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1519516981161458, guid: 1a53271d5c860ff4e940d0bb53d88554,
+    type: 2}
+  m_PrefabInternal: {fileID: 1307181190}
 --- !u!1001 &701407536
 Prefab:
   m_ObjectHideFlags: 0
@@ -2850,6 +2981,11 @@ SpriteRenderer:
   m_Color: {r: 0.3921569, g: 0.54901963, b: 0.36078432, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &748758849 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1519516981161458, guid: 1a53271d5c860ff4e940d0bb53d88554,
+    type: 2}
+  m_PrefabInternal: {fileID: 1169701111}
 --- !u!1 &766999133
 GameObject:
   m_ObjectHideFlags: 0
@@ -3357,6 +3493,23 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 681202202}
           m_MethodName: OnEngine
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 681202202}
+          m_MethodName: OnSelectEngine
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4387,6 +4540,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 681202202}
+          m_MethodName: OnSelectThrusters
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
 --- !u!114 &1432627165
 MonoBehaviour:
@@ -4535,6 +4705,11 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 65, y: 1}
+--- !u!1 &1458984089 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1519516981161458, guid: 1a53271d5c860ff4e940d0bb53d88554,
+    type: 2}
+  m_PrefabInternal: {fileID: 307729705}
 --- !u!1 &1470951807
 GameObject:
   m_ObjectHideFlags: 0
@@ -5042,6 +5217,11 @@ Prefab:
       propertyPath: UnmutedBtn
       value: 
       objectReference: {fileID: 814855186}
+    - target: {fileID: 114332305135997048, guid: 3faefdbfc33970e48a1dc1f404d41bf6,
+        type: 2}
+      propertyPath: UpgradeUI
+      value: 
+      objectReference: {fileID: 681202197}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3faefdbfc33970e48a1dc1f404d41bf6, type: 2}
   m_IsPrefabParent: 0
@@ -5512,6 +5692,23 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 681202202}
           m_MethodName: OnHull
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 681202202}
+          m_MethodName: OnSelectHull
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
