@@ -22,6 +22,8 @@ public class UpgradeSelectionUI : MonoBehaviour
     public void OnSelectFuel()
     {
         rocket1.SetActive(false);
+        rocket3.SetActive(false);
+        rocket4.SetActive(false);
         rocket2.SetActive(true);
     }
 
@@ -32,8 +34,10 @@ public class UpgradeSelectionUI : MonoBehaviour
     }
     public void OnSelectThrusters()
     {
-        rocket1.SetActive(false);
-        rocket2.SetActive(true);
+        rocket1.SetActive(true);
+        rocket3.SetActive(false);
+        rocket4.SetActive(false);
+        rocket2.SetActive(false);
     }
 
     public void OnEngine()
@@ -44,7 +48,9 @@ public class UpgradeSelectionUI : MonoBehaviour
     public void OnSelectEngine()
     {
         rocket1.SetActive(false);
-        rocket3.SetActive(true);
+        rocket3.SetActive(false);
+        rocket4.SetActive(true);
+        rocket2.SetActive(false);
     }
 
     public void OnHull()
@@ -55,6 +61,8 @@ public class UpgradeSelectionUI : MonoBehaviour
     public void OnSelectHull()
     {
         rocket1.SetActive(false);
-        rocket4.SetActive(true);
+        rocket3.SetActive(true);
+        rocket4.SetActive(false);
+        rocket2.SetActive(false);
     }
 }

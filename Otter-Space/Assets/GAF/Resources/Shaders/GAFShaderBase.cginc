@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 #ifndef GAF_SHADER_BASE_INCLUDED
 #define GAF_SHADER_BASE_INCLUDED
 
@@ -53,7 +55,7 @@ gaf_v2f_base gaf_base_vert_group(appdata input)
 	gaf_v2f_base output;
 
 #if GAF_VERTICES_TRANSFORM_ON
-	output.position = mul(UNITY_MATRIX_MVP, input.vertex);
+	output.position = UnityObjectToClipPos(input.vertex);
 #else
 	output.position = input.vertex;
 
@@ -74,7 +76,7 @@ gaf_v2f_minimal gaf_minimal_vert(appdata_base input)
 {
 	gaf_v2f_minimal output;
 
-	output.position = mul(UNITY_MATRIX_MVP, input.vertex);
+	output.position = UnityObjectToClipPos(input.vertex);
 	output.texcoord = TRANSFORM_TEX(input.texcoord, _MainTex);
 
 	return output;

@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 #ifndef GAF_FILTERS_INCLUDED
 #define GAF_FILTERS_INCLUDED
 
@@ -43,7 +45,7 @@ gaf_v2f_base gaf_filter_vert(appdata_base input)
 	input.vertex.xy -= _Pivot;
 	input.vertex.xy *= _Scale.xy;
 	input.vertex.xy += _Pivot;
-	output.position	= mul (UNITY_MATRIX_MVP, input.vertex);
+	output.position	= UnityObjectToClipPos (input.vertex);
 
 	output.texcoord		= TRANSFORM_TEX(input.texcoord, _MainTex);
 	output.color		= _TintColor;
@@ -56,7 +58,7 @@ gaf_v2f_blur gaf_blur_vert(appdata_base input)
 {
 	gaf_v2f_blur output;
 
-	output.position	= mul (UNITY_MATRIX_MVP, input.vertex);
+	output.position	= UnityObjectToClipPos (input.vertex);
 	output.texcoord	= TRANSFORM_TEX(input.texcoord, _MainTex);
 	output.blurstep = float2(_BlurX * (_MainTex_TexelSize.x), _BlurY * (_MainTex_TexelSize.y));
 
