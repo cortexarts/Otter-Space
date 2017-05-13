@@ -65,5 +65,9 @@ Credits:
 
 ***
 
+For developers:
+--------------------------------------
 This project is developed by CortexArts under the GNU GENERAL PUBLIC LICENSE Version 3. <br />
 Any contribution to this project is welcome and will be credited.
+
+The folders are structured according to our own [pipeline](https://drive.google.com/file/d/0B7zRrxQQJxTrdGZFUHlwM0FRYzg/view?usp=sharing).
