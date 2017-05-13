@@ -28,47 +28,55 @@ Mechanics:
 Credits:
 --------------------------------------
 
-CortexArts
+**Developers**
 
-**Manager**
+Manager
 
 - [Marc Frencken](https://github.com/InnoCrator)
 
-**Designers**
+Technical assistant
+
+- [Peter Withers](https://github.com/PeterWithers)
+
+Producer
+
+- [Jasper Drescher](https://github.com/JasperDre)
+
+Designers
 
 - [Feiko van Dijk](https://github.com/henkiepenkie)
 - [Marthijn van Deelen](https://github.com/24lightning)
 
-**Artists**
+Artists
 
 - [Daan Jansen](https://github.com/Danoontjen)
 - [Daan van Leeuwen](https://github.com/superwortel)
 
-**Programmer**
+Programmer
 
 - [Jasper Drescher](https://github.com/JasperDre)
 
-**Animator**
+Animator
 
 - [Harmjan Lever](https://github.com/harmjanfl)
 
-**Music**
+Music
 
 - [Tom Bouwmeister](https://github.com/Bouwmaster17)
 
 ***
 
-Engine & tools
+**Engine & tools**
 
-**Unity3D**: https://unity3d.com/ `Unity Technologies`
+Unity3D: https://unity3d.com/ `Unity Technologies`
 
 ***
 
-Contributors
+**Contributors**
 
-N/A
+- N/A
 
-For developers:
+For contributors:
 --------------------------------------
 This project is developed by CortexArts under the GNU GENERAL PUBLIC LICENSE Version 3. <br />
 Any contribution to this project is welcome and will be credited.
