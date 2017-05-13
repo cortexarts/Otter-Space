@@ -68,10 +68,10 @@ Music
 
 **Engine & tools**
 
-Unity3D: https://unity3d.com/ `Unity Technologies ApS`
-Google Play Games plugin for Unity: https://github.com/playgameservices/play-games-plugin-for-unity `Google Inc.`
-GAF: https://gafmedia.com/ `GAF Media`
-Photoshop: https://www.adobe.com/products/photoshop.html `Adobe Systems Software Ireland Ltd.`
+- Unity3D: https://unity3d.com/ `Unity Technologies ApS`
+- Google Play Games plugin for Unity: https://github.com/playgameservices/play-games-plugin-for-unity `Google Inc.`
+- GAF: https://gafmedia.com/ `GAF Media`
+- Photoshop: https://www.adobe.com/products/photoshop.html `Adobe Systems Software Ireland Ltd.`
 
 ***
 
