@@ -14,7 +14,7 @@ and find some decent wood on the go. You have a nose for trees nonetheless.
 
 Mechanics:
 --------------------------------------
-- Google Play Services for saving and loading progress, highscores, and achievements
+- Google Play Games for saving and loading progress, highscores, and achievements
 - 2D touch input
 - 2D radar
 - 2D collision detection
@@ -42,6 +42,9 @@ Producer
 
 - [Jasper Drescher](https://github.com/JasperDre)
 
+Game writer
+- [Daan van Leeuwen](https://github.com/superwortel)
+
 Designers
 
 - [Feiko van Dijk](https://github.com/henkiepenkie)
@@ -51,14 +54,11 @@ Artists
 
 - [Daan Jansen](https://github.com/Danoontjen)
 - [Daan van Leeuwen](https://github.com/superwortel)
+- [Harmjan Lever](https://github.com/harmjanfl)
 
 Programmer
 
 - [Jasper Drescher](https://github.com/JasperDre)
-
-Animator
-
-- [Harmjan Lever](https://github.com/harmjanfl)
 
 Music
 
@@ -68,7 +68,10 @@ Music
 
 **Engine & tools**
 
-Unity3D: https://unity3d.com/ `Unity Technologies`
+Unity3D: https://unity3d.com/ `Unity Technologies ApS`
+Google Play Games plugin for Unity: https://github.com/playgameservices/play-games-plugin-for-unity `Google Inc.`
+GAF: https://gafmedia.com/ `GAF Media`
+Photoshop: https://www.adobe.com/products/photoshop.html `Adobe Systems Software Ireland Ltd.`
 
 ***
 
