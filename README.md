@@ -73,7 +73,7 @@ Any contribution to this project is welcome and will be credited.
 
 The folders are structured according to our own [pipeline](https://drive.google.com/file/d/0B7zRrxQQJxTrdGZFUHlwM0FRYzg/view?usp=sharing).
 
-Software used for this project are:
+##### Software used for this project
 
 | Name  | Version |
 | ------------- | ------------- |
