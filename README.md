@@ -85,3 +85,15 @@ This project is developed by CortexArts under the GNU GENERAL PUBLIC LICENSE Ver
 Any contribution to this project is welcome and will be credited.
 
 The folders are structured according to our own [pipeline](https://drive.google.com/file/d/0B7zRrxQQJxTrdGZFUHlwM0FRYzg/view?usp=sharing).
+
+The tools used for this project are:
+- Unity3D 5.6.0f3
+- Microsoft Visual Studio 2015 Community Update 3
+- Adobe Photoshop CC 2017
+- GAF 5.1
+- Google Play Games Plugin 0.9.38a
+- Android Studio 2.3.1
+- Android SDK Tools r25.2.5
+- Android 7.1.1
+- Google Play Services 39
+- Android NDK 14.1.3816874
