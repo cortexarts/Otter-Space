@@ -73,14 +73,16 @@ Any contribution to this project is welcome and will be credited.
 
 The folders are structured according to our own [pipeline](https://drive.google.com/file/d/0B7zRrxQQJxTrdGZFUHlwM0FRYzg/view?usp=sharing).
 
-The tools used for this project are:
-- [Unity3D](https://store.unity.com/download?ref=personal) Personal 5.6.0f3
-- [Microsoft Visual Studio](https://www.visualstudio.com/) Community 2015 Update 3
-- [Adobe Photoshop](http://www.adobe.com/products/photoshop.html) CC 2017
-- [GAF](https://gafmedia.com/downloads) 5.1
-- [Google Play Games Plugin](https://github.com/playgameservices/play-games-plugin-for-unity) 0.9.38a
-- [Android Studio](https://developer.android.com/studio/index.html) 2.3.1
-- Android SDK Tools r25.2.5 *included in Android Studio SDK Manager*
-- Android 7.1.1 *included in Android Studio SDK Manager*
-- Google Play Services 39 *included in Android Studio SDK Manager*
-- Android NDK 14.1.3816874 *included in Android Studio SDK Manager*
+Software used for this project are:
+| Name  | Version |
+| ------------- | ------------- |
+| [Unity3D](https://store.unity.com/download?ref=personal)  | Personal 5.6.0f3  |
+| [Microsoft Visual Studio](https://www.visualstudio.com/)  | Community 2015 Update 3  |
+| [Adobe Photoshop](http://www.adobe.com/products/photoshop.html)  | CC 2017  |
+| [GAF](https://gafmedia.com/downloads)  | 5.1  |
+| [Google Play Games Plugin](https://github.com/playgameservices/play-games-plugin-for-unity)  | 0.9.38a  |
+| [Android Studio](https://developer.android.com/studio/index.html)  | 2.3.1  |
+| Android SDK Tools  | r25.2.5  |
+| Android  |  7.1.1  |
+| Google Play Services  | 39 |
+| Android NDK  | 14.1.3816874  |
