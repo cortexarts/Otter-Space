@@ -2,25 +2,25 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class GameMaster : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    public static GameMaster gm;
-
-    //cache
+    public static GameManager gameManager;
     private AudioManager audioManager;
 
     void Start()
     {
-        //caching
+        // Creating a copy of the audio manager
         audioManager = AudioManager.instance;
+
         if (audioManager == null)
         {
-            Debug.LogError("No AudioManager found in the scene.");
+            Debug.LogError(this.name + ": No AudioManager found!");
         }
     }
 
     void Update()
     {
+
     }
 
 }
