@@ -12,19 +12,6 @@ and find some decent wood on the go. You have a nose for trees nonetheless.
 
 - Get the latest release with the source code from [Github](https://github.com/cortexarts/Otter-Space/releases/)
 
-Mechanics:
---------------------------------------
-- Google Play Games for saving and loading progress, highscores, and achievements
-- 2D touch input
-- 2D radar
-- 2D collision detection
-- 2D rigidbody movement
-- 2D UV-scrolling
-- 2D vector math
-- 2D animations
-- Game states
-- Persistent data saving and loading
-
 Credits:
 --------------------------------------
 
@@ -93,7 +80,7 @@ The tools used for this project are:
 - [GAF](https://gafmedia.com/downloads) 5.1
 - [Google Play Games Plugin](https://github.com/playgameservices/play-games-plugin-for-unity) 0.9.38a
 - [Android Studio](https://developer.android.com/studio/index.html) 2.3.1
-- Android SDK Tools r25.2.5 (included in Android Studio SDK Manager)
-- Android] 7.1.1 (included in Android Studio SDK Manager)
-- Google Play Services 39 (included in Android Studio SDK Manager)
-- Android NDK 14.1.3816874 (included in Android Studio SDK Manager)
+- Android SDK Tools r25.2.5 *included in Android Studio SDK Manager*
+- Android 7.1.1 *included in Android Studio SDK Manager*
+- Google Play Services 39 *included in Android Studio SDK Manager*
+- Android NDK 14.1.3816874 *included in Android Studio SDK Manager*
