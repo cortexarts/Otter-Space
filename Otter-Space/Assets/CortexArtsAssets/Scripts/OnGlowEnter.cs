@@ -63,7 +63,7 @@ public class OnGlowEnter : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.tag == "Planet" && PlayerPrefs.GetString("landingBool") == "false")
+        if (coll.gameObject.tag == "Planet" && PlayerPrefs.GetString("landingBool") == "false" && coll.gameObject.name != "Death_star")
         {
             entered = false;
             planetname = coll.gameObject.name;
