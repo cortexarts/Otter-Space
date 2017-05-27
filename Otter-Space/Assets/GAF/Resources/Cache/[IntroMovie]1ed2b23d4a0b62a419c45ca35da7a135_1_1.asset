@@ -14,8 +14,8 @@ MonoBehaviour:
   m_Asset: {fileID: 11400000, guid: 1ed2b23d4a0b62a419c45ca35da7a135, type: 2}
   m_Scale: 1
   m_CSF: 1
-  m_CurrentDataPath: Assets/Animation/Resources/IntroMovie/
+  m_CurrentDataPath: Assets/CortexArtsAssets/Animation/Resources/IntroMovie/
   m_Data:
   - m_SearchName: IntroMovie
-    m_SharedTexture: {fileID: 2800000, guid: bbb39586e31f4214189739d18caab329, type: 3}
-    m_SharedMaterial: {fileID: 2100000, guid: 707d4dd3c8c966646b21bfb7894f66f2, type: 2}
+    m_SharedTexture: {fileID: 0}
+    m_SharedMaterial: {fileID: 0}
