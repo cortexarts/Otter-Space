@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: f57ae0969ebe51943bb6553c8dc49a86
-timeCreated: 1488468827
+guid: a8653ea288113ad409015bd502c2ea1f
+timeCreated: 1495808358
 licenseType: Free
 TrueTypeFontImporter:
   serializedVersion: 4
@@ -9,9 +9,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Lato
+  fontName: Nexa Light
   fontNames:
-  - Lato
+  - Nexa Light
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

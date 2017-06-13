@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 9a20b9636c0e30641bea2f18956858a0
-timeCreated: 1488554362
+guid: f51fd3bcfcc9582489699de9fb54d339
+timeCreated: 1495808359
 licenseType: Free
 TrueTypeFontImporter:
   serializedVersion: 4
@@ -9,9 +9,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: a?space
+  fontName: Nexa Bold
   fontNames:
-  - a?space
+  - Nexa Bold
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

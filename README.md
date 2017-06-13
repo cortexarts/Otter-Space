@@ -58,7 +58,8 @@ Music
 - [Unity3D](https://unity3d.com/) `Unity Technologies ApS`
 - [Google Play Games plugin for Unity](https://github.com/playgameservices/play-games-plugin-for-unity) `Google Inc.`
 - [GAF](https://gafmedia.com/) `GAF Media`
-- [Adobe Photoshop](https://www.adobe.com/products/photoshop.html) `Adobe Systems Software Ireland Ltd.`
+- [Adobe Photoshop CC](https://www.adobe.com/products/photoshop.html) `Adobe Systems Software Ireland Ltd.`
+- [Adobe Illustrator CC](http://www.adobe.com/nl/products/illustrator.html) `Adobe Systems Software Ireland Ltd.`
 
 ***
 
@@ -71,7 +72,7 @@ For contributors:
 This project is developed by CortexArts under the GNU GENERAL PUBLIC LICENSE Version 3. <br />
 Any contribution to this project is welcome and will be credited.
 
-The content of this project is structured according to our own [pipeline](https://drive.google.com/file/d/0B2ucpL8KONYoZDBoY1pxNkdvWnc/view?usp=sharing).
+Please refer to the "Issues" tab for relevant bugs, feature-requests or questions related to this project.
 
 ##### Software used for this project
 
@@ -80,6 +81,7 @@ The content of this project is structured according to our own [pipeline](https:
 | [Unity3D](https://store.unity.com/download?ref=personal)  | Personal 5.6.0f3  |
 | [Microsoft Visual Studio](https://www.visualstudio.com/)  | Community 2015 Update 3  |
 | [Adobe Photoshop](http://www.adobe.com/products/photoshop.html)  | CC 2017  |
+| [Adobe Illustrator CC](http://www.adobe.com/products/illustrator.html)  | CC 2017  |
 | [GAF](https://gafmedia.com/downloads)  | 5.1  |
 | [Google Play Games Plugin](https://github.com/playgameservices/play-games-plugin-for-unity)  | 0.9.38a  |
 | [Android Studio](https://developer.android.com/studio/index.html)  | 2.3.1  |
